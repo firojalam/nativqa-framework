@@ -1,3 +1,5 @@
 .DS_Store
-envs
+envs/*
 results
+data/*
+nativqa/__pycache__/

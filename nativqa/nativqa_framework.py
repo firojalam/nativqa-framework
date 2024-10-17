@@ -24,8 +24,12 @@ from .utils import (read_seed_queries,
                     write_txt_file)
 
 
+urllib3_logger = logging.getLogger('urllib3')
+urllib3_logger.setLevel(logging.CRITICAL)
+logging.basicConfig(format='%(asctime)s %(module)s %(filename)s:%(lineno)s - %(message)s',
+                    encoding='utf-8', level=logging.WARNING)
 logger = logging.getLogger(__name__)
-logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
+logger.setLevel(logging.DEBUG)
 
 
 def extract_completed_queries(output_dir):
@@ -60,8 +64,7 @@ def scrape(data, location, gl, summary_writer, failed_writer, mc=None):
     }
     # output_response = []
     if mc is not None:
-        search_params['cr'] = None
-
+        search_params['cr'] = mc
     for example in tqdm(data, desc="API request processing"):
         category, query = example[0], example[1]
         search_params['q'] = query.strip()
@@ -88,6 +91,7 @@ def scrape(data, location, gl, summary_writer, failed_writer, mc=None):
                 response['questions_and_answers'] = qa_resp
             summary_writer.write(f"{json.dumps(response, ensure_ascii=False)}\n")
         except Exception as e:
+            logger.error(e)
             entry = {"query": query, "category": category, "Error": str(e)}
             failed_writer.write(f"{json.dumps(entry, ensure_ascii=False)}\n")
 
@@ -207,6 +211,9 @@ def main():
         sys.exit(1)
     else:
         load_dotenv(env)
+        if os.getenv('API_KEY') is None:
+            logger.error('API_KEY not found in the system environment!')
+            sys.exit(1)
     if result_dir is None:
         folder_name = os.path.splitext(os.path.basename(input_file))[0]
         result_dir = './results/'+ folder_name
