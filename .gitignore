@@ -3,3 +3,4 @@ envs/*
 results
 data/*
 nativqa/__pycache__/
+*/__pycache__/

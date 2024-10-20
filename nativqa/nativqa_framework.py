@@ -26,11 +26,9 @@ from .utils import (read_seed_queries,
 
 urllib3_logger = logging.getLogger('urllib3')
 urllib3_logger.setLevel(logging.CRITICAL)
-logging.basicConfig(format='%(asctime)s %(module)s %(filename)s:%(lineno)s - %(message)s',
-                    encoding='utf-8', level=logging.WARNING)
 logger = logging.getLogger(__name__)
-logger.setLevel(logging.DEBUG)
-
+logging.basicConfig(format='%(asctime)s %(module)s %(filename)s:%(lineno)s - %(message)s',
+                    encoding='utf-8', level=logging.DEBUG)
 
 def extract_completed_queries(output_dir):
     output = []
@@ -98,7 +96,7 @@ def scrape(data, location, gl, summary_writer, failed_writer, mc=None):
 def generate_output_files(working_dir, summary):
     output_data = read_summary_data(summary)
     out_file = os.path.join(working_dir, 'original_response.json')
-    print(f'writing response to: {out_file}...')
+    logger.info(f'writing response to: {out_file}...')
     write_file(out_file, output_data)
     # category = get_category(summary)
     header = ['data_id', 'category', 'input_query', 'question', 'answer', 'question_type', 'answer_URLs']
@@ -142,7 +140,7 @@ def generate_output_files(working_dir, summary):
                 rqa_resp.append([None, category, results['search_parameters']["q"], 'Not Available', 'NA', 'NA', 'NA'])
 
     out_file = os.path.join(working_dir, 'related_questions.json')
-    print(f'writing related questions to: {out_file}...')
+    logger.info(f'writing related questions to: {out_file}...')
     write_file(out_file, rquestion_resp)
     out_file = os.path.join(working_dir, 'questions_answers.json')
     logger.info(f'writing questions answers to: {out_file}...')
@@ -166,33 +164,7 @@ def generate_output_files(working_dir, summary):
     write_csv_file(out_file, rsearch_resp)
 
 
-def main():
-    parser = optparse.OptionParser()
-    parser.add_option('-i', '--input_file', action="store", dest="input_file", default=None, type="string",
-                      help='input csv/tsv file to scrape')
-    parser.add_option('-c', '--country_code', action='store', dest="country_code", default="qa", type="string",
-                      help="Country code supported by Google")
-    parser.add_option('-l', '--location', action='store', dest="location", default="Doha, Qatar", type="string",
-                      help="Country code supported by Google")
-    parser.add_option('-m', '--multiple_countries', action='store', dest="multiple_countries", default=None,
-                      type="string",
-                      help="Multiple countries supported by Google")
-    parser.add_option('-o', '--output_dir', action="store", dest="output_dir", default=None, type='string',
-                     help="output directory location")
-    parser.add_option('-e', '--env', action='store', dest='env', default=None, type="string",
-                      help='API key file')
-    parser.add_option('-n', '--n_iter', action='store', dest='n_iter', default=3, type="int",
-                      help='Number of iteration for data scrape')
-
-    options, args = parser.parse_args()
-    input_file = options.input_file
-    gl = options.country_code
-    location = options.location
-    env = options.env
-    result_dir = options.output_dir
-    n_iter = options.n_iter
-    multiple_country = options.multiple_countries
-
+def main(input_file, gl, location, multiple_country, result_dir, env, n_iter):
     accepted_input_file = ['csv', 'tsv']
 
     if input_file is None:
@@ -214,8 +186,8 @@ def main():
         if os.getenv('API_KEY') is None:
             logger.error('API_KEY not found in the system environment!')
             sys.exit(1)
+    folder_name = os.path.splitext(os.path.basename(input_file))[0]
     if result_dir is None:
-        folder_name = os.path.splitext(os.path.basename(input_file))[0]
         result_dir = './results/'+ folder_name
     ensure_directory(result_dir)
 
@@ -351,3 +323,34 @@ def main():
     write_csv_file(dataset_file, filtered_output)
     logger.info(f'writing duplicate to: {duplicate_file}')
     write_csv_file(duplicate_file, duplicate)
+
+
+if __name__=="__main__":
+    parser = optparse.OptionParser()
+    parser.add_option('-i', '--input_file', action="store", dest="input_file", default=None, type="string",
+                      help='input csv/tsv file to scrape')
+    parser.add_option('-c', '--country_code', action='store', dest="country_code", default="qa", type="string",
+                      help="Country code supported by Google")
+    parser.add_option('-l', '--location', action='store', dest="location", default="Doha, Qatar", type="string",
+                      help="Location supported by Google")
+    parser.add_option('-m', '--multiple_countries', action='store', dest="multiple_countries", default=None,
+                      type="string",
+                      help="Multiple countries, supported by Google")
+    parser.add_option('-o', '--output_dir', action="store", dest="output_dir", default=None, type='string',
+                      help="output directory location")
+    parser.add_option('-e', '--env', action='store', dest='env', default=None, type="string",
+                      help='API key file')
+    parser.add_option('-n', '--n_iter', action='store', dest='n_iter', default=3, type="int",
+                      help='Number of iteration for data scrape')
+
+    options, args = parser.parse_args()
+    input_file = options.input_file
+    gl = options.country_code
+    location = options.location
+    env = options.env
+    result_dir = options.output_dir
+    n_iter = options.n_iter
+    multiple_country = options.multiple_countries
+
+    main(input_file, gl, location, multiple_country, result_dir, env, n_iter)
+

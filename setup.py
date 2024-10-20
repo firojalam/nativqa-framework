@@ -7,10 +7,5 @@ setup(
     install_requires=[
         # Add any dependencies here
         "google-search-results==2.4.2"
-    ],
-    entry_points={
-        'console_scripts': [
-            'nativqa=nativqa.main:run_workflow',
-        ],
-    },
+    ]
 )

@@ -4,7 +4,8 @@ import json
 import logging
 
 logger = logging.getLogger(__name__)
-logging.basicConfig(encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(format='%(asctime)s %(module)s %(filename)s:%(lineno)s - %(message)s',
+                    encoding='utf-8', level=logging.DEBUG)
 
 def read_seed_queries(fpath):
     delim = ',' if fpath.endswith('.csv') else '\t'
