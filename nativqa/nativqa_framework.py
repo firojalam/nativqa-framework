@@ -164,7 +164,7 @@ def generate_output_files(working_dir, summary):
     write_csv_file(out_file, rsearch_resp)
 
 
-def main(input_file, gl, location, multiple_country, result_dir, env, n_iter):
+def run_nativqa(input_file, gl, location, multiple_country, result_dir, env, n_iter):
     accepted_input_file = ['csv', 'tsv']
 
     if input_file is None:
@@ -324,8 +324,7 @@ def main(input_file, gl, location, multiple_country, result_dir, env, n_iter):
     logger.info(f'writing duplicate to: {duplicate_file}')
     write_csv_file(duplicate_file, duplicate)
 
-
-if __name__=="__main__":
+def main():
     parser = optparse.OptionParser()
     parser.add_option('-i', '--input_file', action="store", dest="input_file", default=None, type="string",
                       help='input csv/tsv file to scrape')
@@ -352,5 +351,8 @@ if __name__=="__main__":
     n_iter = options.n_iter
     multiple_country = options.multiple_countries
 
-    main(input_file, gl, location, multiple_country, result_dir, env, n_iter)
+    run_nativqa(input_file, gl, location, multiple_country, result_dir, env, n_iter)
+
+if __name__=="__main__":
+    main()
 
