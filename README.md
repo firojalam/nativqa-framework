@@ -18,8 +18,10 @@ Developing **NativQA Framework** is an ongoing effort and it will be continuousl
 ## Quick Start
 
 1. Clone the repository `git clone https://gitlab.com/nativqa/nativqa-framework.git`
-2. Put your SerpAPI api key in `envs/api_key.env`
-3. Run the program!
+2. Navigate to the `nativqa-framework` directory by typing `cd nativqa-framework`
+3. Install the requirements `python -m pip install -r requirements.txt`
+4. Put your SerpAPI api key in `envs/api_key.env`
+5. Run the program!
 
 For example, to run the program using example seed queries:
 ```bash
