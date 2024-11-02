@@ -25,7 +25,7 @@ Developing **NativQA Framework** is an ongoing effort and it will be continuousl
 
 For example, to run the program using example seed queries:
 ```bash
-python -m nativqa --input_file data/test_file.csv --country_code qa --location "Doha, Qatar" --env env/api_key.env --n_iter 3
+python -m nativqa --input_file data/test_query.csv --country_code qa --location "Doha, Qatar" --env envs/api_key.env --n_iter 3
 ```
 which uses a sample [seed query files](./data/test_query.csv)
 

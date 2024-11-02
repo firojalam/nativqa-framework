@@ -6,6 +6,8 @@ setup(
     packages=find_packages(),
     install_requires=[
         # Add any dependencies here
-        "google-search-results==2.4.2"
+        "google-search-results==2.4.2",
+        "python-dotenv==1.0.1",
+        "tqdm==4.66.6"
     ]
 )
