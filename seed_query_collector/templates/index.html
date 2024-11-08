@@ -1,70 +1,114 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sentence Submission</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+<!--    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">-->
+    <script type="text/javascript">
+        $(document).ready(function(){
+            // $("#add_topic_area").hide();
+
+            $("#topic").change(function() {
+                var topic = $("#topic").val()
+                if (topic == "Others"){
+                    $("#add_topic_area").show();
+                    $("#add_topic").attr('required', '');
+                }else{
+                    $("#add_topic_area").hide();
+                    $("#add_topic").removeAttr('required');
+                }
+            });
+
+            $("#add_more_sentence").click(function () {
+                var cur_sent = document.getElementById('num_sent').value;
+                var next_sent = parseInt(cur_sent) + 1;
+                var text = '<div class="row" style="margin-top: 10px;"> <label for="sentence_'+ next_sent +'" class="col-sm-2">Write a short sentence</label>\n' +
+                    '                <textarea class="col-sm-6 form-control" id="sentence_'+ next_sent +'" name="sentence_'+ next_sent +'" rows="2"></textarea></div>';
+                document.getElementById('num_sent').value = next_sent;
+                $(".more_content").append(text);
+            });
+
+        });
+    </script>
 </head>
 <body>
-    <h1>Sentence Submission</h1>
-    <form action="/" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <br><br>
+    <div class="row">
+        <div class="col-sm-10 offset-sm-1">
+        <h1 class="text-center">Sentence Submission</h1>
+        <hr/>
+        <form action="/" method="post">
+            <div class="row">
+                <div class="col-sm-2">
+                    <label for="username" class="text-center">Username</label>
+                    <input class="form-control" type="text" id="username" name="username" required>
+                    <br><br>
+                </div>
+                <div class="col-sm-2">
+                    <label for="email" class="text-center">Email</label>
+                    <input class="form-control" type="email" id="email" name="email" required>
+                    <br><br>
+                </div>
+                <div class="col-sm-2">
+                    <label for="country" class="text-center">Country</label>
+                    <input class="form-control" type="text" id="country" name="country" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="location" class="text-center">Location</label>
+                    <input class="form-control" type="text" id="location" name="location" required>
+                </div>
+                <div class="col-sm-2">
+                    <label for="language" class="text-center">Language</label>
+                    <input class="form-control" type="text" id="language" name="language" required>
+                </div>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <br><br>
+                <div class="col-sm-2">
+                    <label for="topic" class="text-center">Topic</label>
+                    <select class="col-sm-12 form-control" name="topic" id="topic" data-live-search="true" required>
+                        <option value="">Select Topic</option>
+                        {% for topic in topics %}
+                            <option value="{{ topic }}">{{ topic }}</option>
+                        {% endfor %}
+                    </select>
+                    <div id="add_topic_area" style="margin-top: 20px; display: none;">
+                        <input class="form-control" type="text" id="add_topic" name="add_topic" placeholder="Write Your Topic">
+                    </div>
+                </div>
 
-        <label for="country">Country:</label>
-        <select name="country" id="country" required>
-            {% for country in countries %}
-                <option value="{{ country }}">{{ country }}</option>
-            {% endfor %}
-        </select>
-        <br><br>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <label for="sentence_1" class="col-sm-2">Write a short sentence</label>
+                <textarea class="col-sm-6 form-control" id="sentence_1" name="sentence_1" rows="2"></textarea>
+    <!--            <input class="col-sm-6" type="text" id="sentence" name="sentence" required>-->
+                <input type="text" value="1" id="num_sent" name="num_sent" hidden>
+            </div>
+            <div class="row">
+                <div id="more_content" class="more_content col-sm-12">
+                    <!-- add block for more sentences -->
+                </div>
+                <div class="col-sm-2 offset-sm-8">
+                    <p class="btn btn-secondary" id="add_more_sentence" name="add_more_sentence">Add More</p>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 20px;">
+                <button class="btn btn-primary text-center offset-sm-5" type="submit">Submit</button>
+            </div>
+        </form>
 
-        <label for="location">Location:</label>
-        <select name="location" id="location" required>
-            {% for country, locs in locations.items() %}
-                <optgroup label="{{ country }}">
-                    {% for loc in locs %}
-                        <option value="{{ loc }}">{{ loc }}</option>
-                    {% endfor %}
-                </optgroup>
-            {% endfor %}
-        </select>
-        <br><br>
+            <h2 class="text-center">Submitted Sentences</h2>
+            <div class="text-center">
+                <a href="{{ url_for('view_sentence') }}">Click Here to See</a>
+            </div>
+            <hr/>
 
-        <label for="language">Language:</label>
-        <select name="language" id="language" required>
-            {% for language in languages %}
-                <option value="{{ language }}">{{ language }}</option>
-            {% endfor %}
-        </select>
-        <br><br>
-
-        <label for="topic">Topic:</label>
-        <select name="topic" id="topic" required>
-            {% for topic in topics %}
-                <option value="{{ topic }}">{{ topic }}</option>
-            {% endfor %}
-        </select>
-        <br><br>
-
-        <label for="sentence">Write a short sentence:</label>
-        <input type="text" id="sentence" name="sentence" required>
-        <br><br>
-
-        <button type="submit">Submit</button>
-    </form>
-
-    <h2>Submitted Sentences</h2>
-    <ul>
-        {% for sentence in sentences %}
-            <li>{{ sentence.sentence_text }} - {{ sentence.user.username }} ({{ sentence.user.email }}) <a href="{{ url_for('edit_sentence', id=sentence.id) }}">Edit</a></li>
-        {% endfor %}
-    </ul>
+            <h2 class="text-center">Contributor List</h2>
+            <div class="text-center">
+                <a href="{{ url_for('contributor') }}">Click Here to See</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

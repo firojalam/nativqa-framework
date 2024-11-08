@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit Sentence</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>View Submitted Query</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1 class="text-center">Edit Sentence</h1>
-    <hr/>
-    <form action="{{ url_for('edit_sentence', id=sentence.id) }}" method="post">
-        <label for="edited_sentence">Edit your sentence:</label>
-        <input class="form-control" type="text" id="edited_sentence" name="edited_sentence" value="{{ sentence.sentence_text }}" required>
-        <br><br>
-        <button class="btn btn-primary" type="submit">Update</button>
-    </form>
+<div class="row">
+    <div class="col-sm-10 offset-sm-1">
+        <h1 class="text-center">Contributors</h1>
+        <hr/>
+        <ul>
+            {% if users %}
+            {% for user in users %}
+            <li>{{ user.username }} - {{ user.email }} </li>
+            {% endfor %}
+            {% else %}
+            <h2 class="text-center text-info">We will update the contributor list soon!</h2>
+            {% endif %}
+        </ul>
+        <div class="text-center">
+            <a class="text-center" href="{{ url_for('index') }}">Back to Homepage</a>
+        </div>
+    </div>
+</div>
 </body>
 </html>
