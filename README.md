@@ -11,7 +11,7 @@ Natural Question Answering (QA) datasets play a crucial role in developing and e
 </p>
 
 Developing **NativQA Framework** is an ongoing effort and it will be continuously expanded. Currently, the framework features the following:
-- Support [Google Search](https://google.com) for collecting "People also ask" questions and answers.
+- Support [Google](https://google.com), [Yahoo](https://yahoo.com), and [Bing](https://www.bing.com) search engine for collecting "People also ask" questions and answers.
 - Support seed queries in CSV/TSV format.
 - Open-source.
 
