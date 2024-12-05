@@ -50,9 +50,9 @@ def extract_completed_queries(output_dir):
     return output_file
 
 
-def scrape(data, location, gl, summary_writer, failed_writer, mc=None):
+def scrape(engine, data, location, gl, summary_writer, failed_writer, mc=None):
     search_params = {
-        "engine": "google",
+        "engine": engine,
         "q": "",
         "location": location,
         "gl": gl,
@@ -164,9 +164,14 @@ def generate_output_files(working_dir, summary):
     write_csv_file(out_file, rsearch_resp)
 
 
-def run_nativqa(input_file, gl, location, multiple_country, result_dir, env, n_iter):
+def run_nativqa(engine, input_file, gl, location, multiple_country, result_dir, env, n_iter):
     accepted_input_file = ['csv', 'tsv']
-
+    accepted_search_engine = ['google', 'yahoo', 'bing']
+    if engine.lower() == accepted_search_engine:
+        engine = engine.lower()
+    else:
+        logger.error('please specify search engine either `google` or `bing`')
+        sys.exit(1)
     if input_file is None:
         logger.error('input file is required!')
         sys.exit(1)
@@ -236,14 +241,14 @@ def run_nativqa(input_file, gl, location, multiple_country, result_dir, env, n_i
                 logger.info(f'Skipping total data: {len(summary_data)}')
                 # print("failed, continuing from failed first followed by summary")
                 # first try to scrape failed data, then try to scrape rest
-                scrape(failed_data, location, gl, summary_writer, failed_writer, multiple_country)
+                scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
                 start_index = len(failed_data) + len(summary_data)
                 data = data[start_index:]
-                scrape(data, location, gl, summary_writer, failed_writer, multiple_country)
+                scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
             else:
                 # scrape only failed data
                 # print("scrapping only failed data")
-                scrape(failed_data, location, gl, summary_writer, failed_writer, multiple_country)
+                scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
         else:
             # no failed data, need to check summary data
             if len(summary_data) == len(data):
@@ -252,11 +257,11 @@ def run_nativqa(input_file, gl, location, multiple_country, result_dir, env, n_i
                 # print("No failed, only continuing from summary")
                 logger.info(f'Skipping total data: {len(summary_data)}')
                 data = data[len(summary_data):]
-                scrape(data, location, gl, summary_writer, failed_writer, multiple_country)
+                scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
             else:
                 # starting from input file
                 # print("starting from input file")
-                scrape(data, location, gl, summary_writer, failed_writer, multiple_country)
+                scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
         summary_writer.close()
         failed_writer.close()
         generate_output_files(output_dir, summary)
@@ -326,6 +331,8 @@ def run_nativqa(input_file, gl, location, multiple_country, result_dir, env, n_i
 
 def main():
     parser = optparse.OptionParser()
+    parser.add_option('-s', '--engine', action="store", dest="engine", default=None, type="string",
+                      help='Search engine (google, yahoo, or bing)')
     parser.add_option('-i', '--input_file', action="store", dest="input_file", default=None, type="string",
                       help='input csv/tsv file to scrape')
     parser.add_option('-c', '--country_code', action='store', dest="country_code", default="qa", type="string",
@@ -343,6 +350,7 @@ def main():
                       help='Number of iteration for data scrape')
 
     options, args = parser.parse_args()
+    engine = options.engine
     input_file = options.input_file
     gl = options.country_code
     location = options.location
@@ -351,7 +359,7 @@ def main():
     n_iter = options.n_iter
     multiple_country = options.multiple_countries
 
-    run_nativqa(input_file, gl, location, multiple_country, result_dir, env, n_iter)
+    run_nativqa(engine, input_file, gl, location, multiple_country, result_dir, env, n_iter)
 
 if __name__=="__main__":
     main()
