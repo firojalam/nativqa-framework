@@ -167,10 +167,10 @@ def generate_output_files(working_dir, summary):
 def run_nativqa(engine, input_file, gl, location, multiple_country, result_dir, env, n_iter):
     accepted_input_file = ['csv', 'tsv']
     accepted_search_engine = ['google', 'yahoo', 'bing']
-    if engine.lower() == accepted_search_engine:
+    if engine.lower() in accepted_search_engine:
         engine = engine.lower()
     else:
-        logger.error('please specify search engine either `google` or `bing`')
+        logger.error('please specify search engine either `google`, `yahoo`, or `bing`')
         sys.exit(1)
     if input_file is None:
         logger.error('input file is required!')
