@@ -76,6 +76,11 @@ def read_txt_data(filepath):
     queries = open(filepath, 'r', encoding='utf-8').read().strip().split("\n")
     return queries
 
+def read_json_data(fpath):
+    with open(fpath) as f:
+        data = json.load(f)
+    return data
+
 def write_init_summary(filewriter, data):
     for line in data:
         filewriter.write(f"{json.dumps(line, ensure_ascii=False)}\n")
