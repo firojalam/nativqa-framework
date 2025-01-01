@@ -25,13 +25,14 @@ Developing **NativQA Framework** is an ongoing effort and it will be continuousl
 
 For example, to run the program using example seed queries:
 ```bash
-python -m nativqa --engine google --input_file data/test_query.csv --country_code qa --location "Doha, Qatar" --env envs/api_key.env --n_iter 3
+python -m nativqa --engine google --search_type text --input_file data/test_query.csv --country_code qa --location "Doha, Qatar" --env envs/api_key.env --n_iter 3
 ```
 which uses a sample [seed query files](./data/test_query.csv)
 
 #### Parameters
 
 - `--engine` Search engine to use for collect QA. Currently supports only Google, Bing, and Yahoo.
+- `--search_type` Type of search either `text` or `image`. [Currently supports only Google for image search.]
 - `--input_file` seed query file should be CSV/TSV
 - `--country_code` Parameter defines the country to use for the Google search. The country code supported by Google.
 - `--location` Parameter defines from where you want the search to originate.
