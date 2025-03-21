@@ -48,6 +48,15 @@ which uses a sample [seed query files](./data/test_query.csv)
     - **output** contains the output of each iteration consisting of `related_search.tsv, original_response.json, summary.jsonl, related_question.json`
   - **completed_queries.txt** List of completed searched queries
 
+## Licence
+The **NativQA Framework** is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+
+You are free to share and adapt the framework for **non-commercial purposes**, provided that:
+
+- You give **appropriate credit**.
+- You indicate if **changes were made**.
+- You distribute your contributions under the **same license**.
+
 ## Citation
 Please cite our papers when referring to this framework:
 
