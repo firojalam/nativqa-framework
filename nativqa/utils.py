@@ -10,6 +10,7 @@ logging.basicConfig(format='%(asctime)s %(module)s %(filename)s:%(lineno)s - %(m
 def read_seed_queries(fpath):
     delim = ',' if fpath.endswith('.csv') else '\t'
     data = []
+    unique = []
     with open(fpath, 'r', encoding='utf-8') as f:
         reader = csv.reader(f, delimiter=delim)
         next(reader)
@@ -18,7 +19,10 @@ def read_seed_queries(fpath):
             # if topic not in data:
             #     data[topic] = []
             # data[topic].append(query)
-            data.append([row[0].strip(), row[1].strip()])
+            if row[1].strip() not in unique:
+                unique.append(row[1].strip())
+                data.append([row[0].strip(), row[1].strip()])
+    logger.info(f"Number of queries to be searched: {len(data)}")
     return data
 
 def ensure_directory(path):

@@ -230,8 +230,9 @@ def generate_output_files(working_dir, summary):
                     ans = entry['snippet']
                 elif 'list' in entry:
                     ans = "\n".join(entry['list'])
-                rqa_resp.append([entry['data_id'], category, results['search_parameters']["q"], entry['question'], ans,
-                                 'related_questions', entry['link']])
+                if "link" in entry:
+                    rqa_resp.append([entry['data_id'], category, results['search_parameters']["q"], entry['question'], ans,
+                                     'related_questions', entry['link']])
             rq = {'search_parameters': results['search_parameters'], 'related_questions': results['related_questions']}
             rquestion_resp.append(rq)
         if 'questions_and_answers' in results:
