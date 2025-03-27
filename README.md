@@ -56,6 +56,17 @@ which uses a sample [seed query files](./data/test_query.csv)
     - **output** contains the output of each iteration consisting of `related_search.tsv, original_response.json, summary.jsonl, related_question.json`
   - **completed_queries.txt** List of completed searched queries
 
+#### Domain Reliability Check (DRC)
+
+Manually verified domains list file are located in `domain/annotated_domains.csv`.
+
+To verify the answer source reliability: (the input file will be dataset file generated from `nativqa` framework.)
+
+```python
+python scripts/check_domain_reliability.py --input_file <dataset_directory>/input_filename.csv --output_file <output_directory>/output_filename.csv
+```
+Note that we only support csv/tsv file for domain reliability task. We aim to extend other file types in future.
+
 ## Licence
 The **NativQA Framework** is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
 
