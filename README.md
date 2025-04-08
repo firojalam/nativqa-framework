@@ -35,7 +35,7 @@ For example, to run the program using example seed queries:
 ```bash
 python -m nativqa --engine google --search_type text --input_file data/test_query.csv --country_code qa --location "Doha, Qatar" --env envs/api_key.env --n_iter 3
 ```
-which uses a sample [seed query files](./data/test_query.csv)
+which uses a sample [seed query file](./data/test_query.csv)
 
 #### Parameters
 
@@ -56,7 +56,19 @@ which uses a sample [seed query files](./data/test_query.csv)
     - **output** contains the output of each iteration consisting of `related_search.tsv, original_response.json, summary.jsonl, related_question.json`
   - **completed_queries.txt** List of completed searched queries
 
-#### Domain Reliability Check (DRC)
+## Query collection
+
+### Template based Query Generation
+
+To add
+
+### LLM based Query Generation
+
+To add
+
+## QA Validation
+
+### Domain Reliability Check (DRC)
 
 Manually verified domains list file are located in `domain/annotated_domains.csv`.
 
@@ -66,6 +78,9 @@ To verify the answer source reliability: (the input file will be dataset file ge
 python scripts/check_domain_reliability.py --input_file <dataset_directory>/input_filename.csv --output_file <output_directory>/output_filename.csv
 ```
 Note that we only support csv/tsv file for domain reliability task. We aim to extend other file types in future.
+
+### LLM based Annotation
+To add
 
 ## Licence
 The **NativQA Framework** is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
