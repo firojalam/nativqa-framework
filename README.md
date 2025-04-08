@@ -10,7 +10,7 @@
 ## 🌍 Key Features
 <p align="center">
 <picture>
-<img alt = "NativQA framework, demonstrating the data collection and annotation process." src="https://nativqa.gitlab.io/assets/img/data_collection_pipeline_nativqa-1400.webp" width="510" height="160"/>
+<img alt = "NativQA framework, demonstrating the data collection and annotation process." src="nativqa_framework.png" width="510"/>
 </picture>
 </p>
 
@@ -80,10 +80,10 @@ You are free to share and adapt the framework for **non-commercial purposes**, p
 Please cite our papers when referring to this framework:
 
 ```
-@article{hasan2024nativqa,
-  title={NativQA: Multilingual Culturally-Aligned Natural Query for LLMs},
-  author={Hasan, Md Arid and Hasanain, Maram and Ahmad, Fatema and Laskar, Sahinur Rahman and Upadhyay, Sunaya and Sukhadia, Vrunda N and Kutlu, Mucahid and Chowdhury, Shammur Absar and Alam, Firoj},
-  journal={arXiv preprint arXiv:2407.09823},
+@article{Alam2025nativqa,
+  title={NativQA Framework: A Framework for Collecting Multilingual Culturally-Aligned Natural Queries},
+  author={Alam, Firoj and Hasan, Md Arid and Laskar, Sahinur Rahman and Kutlu, Mucahid and Chowdhury, Shammur Absar},
+  journal={arXiv},
   year={2024}
 }
 ```
