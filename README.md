@@ -63,7 +63,9 @@ which uses a sample [seed query file](./data/test_query.csv)
 
 ### Template based Query Generation
 
-To add
+```
+python scripts/template2seeds.py --template_file templates/arabic_template.csv --output_file templates/test.csv --location "قطر"
+```
 
 ### LLM based Query Generation
 
@@ -83,7 +85,10 @@ python scripts/check_domain_reliability.py --input_file <dataset_directory>/inpu
 Note that we only support csv/tsv file for domain reliability task. We aim to extend other file types in future.
 
 ### LLM based Annotation
-To add
+
+```python
+python scripts/GPT_4o_labeling.py --input_file results/text/arabic_qa/dataset.json --env_path envs/gpt4-api-key.env --output_dir results/text/arabic_qa/GPT4o_labeling/ --location "Qatar"
+```
 
 ## Licence
 The **NativQA Framework** is licensed under the [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0)](https://creativecommons.org/licenses/by-nc-sa/4.0/).

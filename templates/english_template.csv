@@ -1,0 +1,1002 @@
+topic,query
+animal,What is [LOCATION] State animal?
+animal,What wild animal is in [LOCATION]?
+animal,What is the symbol of the [LOCATION]?
+animal,What animals are in [LOCATION] waters?
+animal,What is the animal life in [LOCATION]?
+animal,What is [LOCATION] State animal and why?
+animal,How many animal shelters are in [LOCATION]?
+animal,What is Animal Care Center in [LOCATION]?
+animal,How much does it cost to adopt a dog in [LOCATION]?
+animal,Are there any poisonous animals in [LOCATION]?
+animal,What is the wildlife Unit [LOCATION] Parks?
+animal,Who takes care of [LOCATION] parks?
+animal,Does [LOCATION] have an aquarium?
+animal,How many animals does the [LOCATION] Aquarium have?
+animal,Does [LOCATION] aquarium have a free day?
+animal,How long does it take to walk through the [LOCATION] Aquarium?
+animal,Where to see whales near [LOCATION]?
+animal,When to go whale watching on Long Island?
+animal,What is the biggest zoo in [LOCATION]?
+animal,Is there a free zoo in [LOCATION]?
+animal,What is the pet rule in [LOCATION]?
+animal,Is [LOCATION] a pet friendly city?
+animal,Do [LOCATION] apartments allow pets?
+animal,Are pet stores legal in [LOCATION]?
+business,Is [LOCATION] a good city for business?
+business,What business is [LOCATION] known for?
+business,What is the business culture in [LOCATION]?
+business,What is [LOCATION]'s biggest industry?
+business,What is [LOCATION]'s main trade?
+business,What trade makes the most money in [LOCATION]?
+business,Are many Indian restaurants in [LOCATION] run by Bangladeshis?
+business,What is the most successful business in [LOCATION]?
+business,What is the largest finance company in [LOCATION]?
+business,Why is [LOCATION] the financial capital of the world?
+business,What percent of [LOCATION] works in finance?
+business,What is [LOCATION] known for manufacturing?
+business,What does [LOCATION] produce or manufacture?
+business,What products are manufactured in [LOCATION] State?
+business,Are there still factories in [LOCATION]?
+business,What is the biggest industry in [LOCATION]?
+business,What is [LOCATION]'s top export?
+business,What is the famous brand from [LOCATION]?
+business,Where was the first stock exchange in [LOCATION]?
+business,What is the name of the stock exchange on Wall Street?
+business,What are the largest banks headquartered in [LOCATION]?
+business,What is the largest bank in the [LOCATION] by assets?
+business,"Which [LOCATION]-based media conglomerate owns CNN, HBO, and Warner Bros.?"
+business,Where are most startups located in [LOCATION]?
+business,What is the largest business district in [LOCATION]?
+business,What was the center of music publishing in [LOCATION]?
+business,Who are the big five [LOCATION] publishers?
+business,What is the name of the cancer center in [LOCATION]?
+business,good cancer hospital in [LOCATION]?
+business,Which [LOCATION] medical center is known for its pioneering work in heart transplants?
+business,Which [LOCATION] street is famous for its concentration of jewelry stores?
+business,How many street food vendors are there in [LOCATION]?
+business,How many food establishments are there in [LOCATION]?
+business,How many food carts are in [LOCATION]?
+cloths,What is the fancy shopping street in [LOCATION]?
+cloths,What part of [LOCATION] is best for shopping?
+cloths,What happened to [LOCATION] and Company clothes?
+cloths,Which [LOCATION] based fashion designer is famous for her stylish wedding gowns?
+cloths,What is the most famous department store in [LOCATION]?
+cloths,"Which department stores are famous for their big, medium, and small brown bags?"
+cloths,What luxury department store brand is based in Midtown [LOCATION]?
+cloths,What clothing brand has a polo player logo?
+cloths,"Which iconic American fashion brand, founded in [LOCATION], is known for its polo player logo?"
+cloths,What popular Japanese clothing retailer opened its first US store in [LOCATION]'s SoHo neighborhood?
+cloths,"Which [LOCATION]-based fashion designer is famous for his minimalist, all-American sportswear?"
+cloths,Which fast-fashion retailer from Spain has multiple large stores in [LOCATION]?
+cloths,When did wrap dresses become popular?
+cloths,What is the hijab case in [LOCATION]?
+cloths,Is [LOCATION] safe for hijabis?
+cloths,Is it allowed to wear hijab in [LOCATION]?
+cloths,Which [LOCATION]-based designer is famous for his red-soled shoes?
+cloths,What fashion brands are headquartered in [LOCATION]?
+cloths,Which British high fashion brand is known for trench coats?
+cloths,"Which British fashion brand, known for its trench coats, has its flagship store in [LOCATION]?"
+cloths,Which [LOCATION]-based designer is famous for his classic American menswear and Purple Label line?
+cloths,What is the argument against the dress code in [LOCATION] ?
+cloths,What is the gender discrimination policy in [LOCATION]?
+cloths,Do [LOCATION] clubs have a dress code?
+cloths,What does the [LOCATION] Human Rights Law protect people from discrimination in employment based on specific protected classes?
+cloths,How can religious discrimination be addressed in [LOCATION] ?
+cloths,What is the new [LOCATION] school dress code?
+cloths,Will [LOCATION] public school students have to abide by a universal school dress code?
+education,What is the education system like in [LOCATION]?
+education,What is [LOCATION] ranked in education?
+education,Is education free in [LOCATION]?
+education,How is school life in [LOCATION]?
+education,What is the #1 high school in [LOCATION]?
+education,Who gets free college in [LOCATION]?
+education,Who qualifies for financial aid in [LOCATION]?
+education,Which boroughs have the highest-rated public schools?
+education,What are some notable private schools in [LOCATION]?
+education,What are the top-ranked universities in [LOCATION]?
+education,How does [LOCATION] State ensure that children receive adequate educational support?
+education,What qualifies a child for an Individualized Education Programs(IEP) in [LOCATION] State?
+education,How does [LOCATION] support English Language Learners?
+education,What is the [LOCATION] State Education Department's role in [LOCATION] schools?
+education,What are some of the largest community colleges in [LOCATION]?
+education,How does [LOCATION] incorporate technology in its classrooms?
+education,What is the graduation rate for [LOCATION] high schools?
+education,What is the dropout rate for [LOCATION] high schools?
+education,How long is [LOCATION] summer school?
+education,How much do [LOCATION] DOE teachers get paid for summer school?
+education,Is summer school free in [LOCATION]?
+education,What is the educational Opportunity Program in [LOCATION]?
+education,Does [LOCATION] do common core?
+education,What are the requirements for homeschooling in [LOCATION]?
+education,How many hours are required for homeschooling in [LOCATION]?
+education,How much does homeschooling cost in [LOCATION]?
+education,How does [LOCATION] support adult education and literacy programs?
+education,What is the role of the [LOCATION] State Education Department?
+education,Who governs [LOCATION] public schools?
+education,Who is in charge of NYS schools?
+education,Who in [LOCATION] state influences or administers educational policy?
+education,What is the Universal Pre-K program in [LOCATION]?
+education,How does pre-K work in [LOCATION]?
+education,When did UPK start in [LOCATION]?
+education,Is universal pre-k free in [LOCATION]?
+education,What are some notable research institutions in [LOCATION]?
+education,How does [LOCATION] address school overcrowding issues?
+education,What percentage of [LOCATION] students go to college?
+education,What is the average education level in [LOCATION]?
+education,What problem is the [LOCATION] school system facing?
+education,Why is [LOCATION] public school enrollment down?
+education,What is the oldest age you can attend high school in [LOCATION]?
+education,How many homeless children are in [LOCATION] schools?
+education,How many days of school can you legally miss in [LOCATION]?
+education,What is the most elite private school in [LOCATION]?
+events,What are important historical events of [LOCATION]?
+events,events in manhattan today
+events,How to find fun events in [LOCATION]?
+events,Where are the street fairs in [LOCATION]?
+events,What is the only curved street in [LOCATION]?
+events,little italy festival [LOCATION] 
+events,Where to go on Memorial Day in [LOCATION]?
+events,comedy club events [LOCATION] 
+events,How to find cool events [LOCATION]?
+events,What is the most famous comedy club?
+events,Is the Macy's Day parade free to attend?
+events,Where can I watch Macy's parade in [LOCATION]?
+events,Can you watch Macy's parade from a hotel room?
+events,Where is the best place to watch the Thanksgiving Day parade?
+events,new year's eve in [LOCATION] 
+events,Where is the [LOCATION] ball drop?
+events,Does it cost money to see the ball drop in [LOCATION]?
+events,restaurants for [LOCATION]  ball drop
+events,What is Prospect Park best known for?
+events,Where are concerts in Prospect Park?
+events,What is the DUMBO drop in [LOCATION]?
+food_drinks,Which [LOCATION] borough is known for its diverse international cuisine?
+food_drinks,What food and drink is [LOCATION] famous for?
+food_drinks,What is the traditional food of [LOCATION]?
+food_drinks,What is [LOCATION] state food?
+food_drinks,How expensive is [LOCATION] to eat and drink?
+food_drinks,What is [LOCATION]'s famous drink?
+food_drinks,What is the snack of [LOCATION]?
+food_drinks,What do [LOCATION]ers eat for breakfast?
+food_drinks,What is the state dessert of [LOCATION]?
+food_drinks,What food is [LOCATION] known for?
+food_drinks,What to tip in [LOCATION]?
+food_drinks,What water do [LOCATION]ers drink?
+food_drinks,What is a [LOCATION] Happy Meal?
+food_drinks,What to eat at a [LOCATION] deli?
+food_drinks,What is the state fruit of [LOCATION]?
+food_drinks,What happens if someone doesn't tip in [LOCATION]?
+food_drinks,What is a typical [LOCATION] sandwich?
+food_drinks,Where do celebrities eat in [LOCATION]?
+food_drinks,What is the official vegetable of [LOCATION] State?
+food_drinks,How many Michelin star restaurants are there in [LOCATION]?
+food_drinks,What is the most expensive Michelin restaurant in [LOCATION]?
+food_drinks,What is the major influence on [LOCATION] City's cuisine?
+food_drinks,Where is the [LOCATION] Wine and Food Festival?
+food_drinks,Why are there so many Italian restaurants in [LOCATION]?
+food_drinks,What types of food do the people serve and have available in Chinatown [LOCATION]?
+food_drinks,Is Chinatown [LOCATION] cash only?
+food_drinks,Which cocktail is also a [LOCATION] borough?
+food_drinks,Where do celebs drink in [LOCATION]?
+food_drinks,What is a fun fact about the [LOCATION] drink?
+food_drinks,How many street food vendors are there in [LOCATION]?
+food_drinks,What was a popular street food item in [LOCATION]?
+food_drinks,What are the rules for street vending in [LOCATION]?
+food_drinks,Does [LOCATION] have farmers markets?
+food_drinks,What are the top 3 agricultural products in [LOCATION]?
+food_drinks,Who runs [LOCATION] farmers markets?
+food_drinks,What borough in [LOCATION] has the best food?
+food_drinks,Who is eligible for food bank in [LOCATION]?
+food_drinks,What is the largest food bank in [LOCATION]?
+food_drinks,How many food pantries are in [LOCATION]?
+food_drinks,What is the emergency food assistance program in [LOCATION]?
+food_drinks,Who is eligible for food bank in [LOCATION]?
+food_drinks,Which delivery app is cheaper in [LOCATION]?
+food_drinks,Does Uber Eats work in [LOCATION]?
+food_drinks,What is Grubhub [LOCATION]?
+general,What is the median rent for a 1 bedroom in [LOCATION]?
+general,What part of [LOCATION] has the cheapest rent?
+general,What is the true cost of living in [LOCATION]?
+general,What is the minimum salary to live comfortably in [LOCATION]?
+general,Is the [LOCATION] job market competitive?
+general,Is it difficult to find a job in [LOCATION]?
+general,Does [LOCATION] have a lot of job opportunities?
+general,Is [LOCATION] easy to walk around?
+general,How walkable is [LOCATION]?
+general,Is finding parking in [LOCATION] hard?
+general,How long does it take to find parking in [LOCATION]?
+general,What [LOCATION]ers do on weekends?
+general,What is the average daily spend in [LOCATION]?
+general,Is [LOCATION] safe compared to other cities?
+general,Where does [LOCATION] rank in crime?
+general,Does [LOCATION] have good air quality?
+general,How is the air quality in [LOCATION] over the years?
+general,Why is air pollution a problem in [LOCATION]?
+general,What is the average commute time in [LOCATION]?
+general,How many people commute into [LOCATION] everyday?
+general,What is the average work time in [LOCATION]?
+general,How is the work culture in [LOCATION]?
+geography,How many boroughs make up [LOCATION]?
+geography,Which borough is the only one connected to the mainland United States?
+geography,Which river separates Staten Island from the rest of [LOCATION]?
+geography,Which two rivers border [LOCATION]?
+geography,"What is the highest natural point in [LOCATION] City, and where is it located?"
+geography,Which park is the largest in [LOCATION]?
+geography,Which borough is the only one not separated from upstate [LOCATION] by water?
+geography,Which river separates [LOCATION] from New Jersey?
+geography,What is the name of the island that makes up the borough of [LOCATION]?
+geography,Which two rivers form a natural harbor around [LOCATION]?
+geography,What is the largest borough of [LOCATION] by land area?
+geography,Which island is home to the Statue of Liberty?
+geography,What body of water separates Staten Island from New Jersey?
+geography,Which bridge connects Brooklyn to Staten Island?
+geography,What body of water is Staten Island on?
+geography,What is the water between Staten Island and [LOCATION]?
+immigration,Why did so many immigrants come to [LOCATION]?
+immigration,Who are the major immigrants in [LOCATION]?
+immigration,What benefits can undocumented immigrants get in [LOCATION]?
+immigration,How much money has [LOCATION] spent on migrants?
+immigration,What is the largest immigrant group in [LOCATION]?
+immigration,Which [LOCATION] borough has the most immigrants?
+immigration,How many Jews live in [LOCATION]?
+immigration,How much money has [LOCATION] spent on migrants?
+immigration,Do immigrants get free healthcare in [LOCATION]?
+immigration,"""Can immigrants get food stamps in [LOCATION]?"""
+immigration,Can immigrants get license in [LOCATION]?
+immigration,Does [LOCATION] welcome immigrants?
+immigration,Can undocumented immigrants get a [LOCATION] ID?
+immigration,What are the immigration laws in [LOCATION]?
+immigration,What is the 60 day rule in [LOCATION]?
+immigration,"""When did people start immigrating to [LOCATION]?"""
+immigration,Where do most immigrants in [LOCATION] come from?
+immigration,How much is an immigration lawyer in [LOCATION]?
+immigration,What are the different types of visas in [LOCATION]?
+immigration,What are the immigrant visa types?
+immigration,Who is eligible for U.S. immigrant visa?
+immigration,What is the difference between green card and immigrant visa?
+immigration,How long is an immigrant visa valid for?
+immigration,How does immigration status affect healthcare?
+immigration,Do immigrants get free healthcare in [LOCATION]?
+immigration,Can immigrants go to college in [LOCATION]?
+immigration,When did the migrant crisis start in [LOCATION]?
+immigration,Does [LOCATION] University accept undocumented students?
+immigration,Can illegal immigrants go to CUNY?
+immigration,What were living and working conditions like for immigrants in cities like [LOCATION]?
+immigration,What jobs did immigrants have in [LOCATION]?
+immigration,How to get a tourist visa for [LOCATION]?
+immigration,How much does a visa cost for [LOCATION]?
+immigration,What is the housing program for immigrants in [LOCATION]?
+immigration,How much does it cost to house a migrant in [LOCATION]?
+language,Which language is used in [LOCATION]?
+language,How many official languages are spoken in [LOCATION]?
+language,What is a [LOCATION] accent called?
+language,How many [LOCATION]ers are bilingual?
+language,What are the top 5 languages spoken in [LOCATION]?
+language,What is [LOCATION]'s basic language?
+language,"What language, after English, is most commonly spoken in [LOCATION]?"
+language,Which accent is similar to [LOCATION]?
+language,Do [LOCATION] Jews speak Yiddish?
+language,Is Flushing Cantonese or Mandarin?
+language,Which Asian language is most commonly spoken in [LOCATION]?
+language,What is the most common South Asian language?
+language,Which African language is widely spoken in [LOCATION]?
+language,Where is the Indian neighborhood in [LOCATION]?
+language,What language did indigenous people speak?
+language,What is the South Asian community in [LOCATION]?
+language,What is the most common Chinese language in [LOCATION]?
+language,What is the most common Chinese language in [LOCATION]?
+language,Does NYU have a sign language program?
+language,What is the sign language for [LOCATION]?
+literature,What is [LOCATION] literature?
+literature,Who is the best literary agent in [LOCATION]?
+literature,Is [LOCATION] a good place for writers?
+literature,Who is the famous author in [LOCATION]?
+literature,Who is the best selling author in [LOCATION]?
+literature,What was the name of the new literary movement based in [LOCATION]?
+literature,"Which [LOCATION]-based publishing house is known as one of the ""Big Five"" publishers?"
+literature,What is the biggest publishing house in [LOCATION]?
+literature,What were the first publishing houses in [LOCATION] called?
+literature,What is the oldest library in [LOCATION]?
+literature,What is the [LOCATION] Public Library most borrowed book of all time?
+literature,What is the name of the famous library in [LOCATION]?
+literature,What is the most famous room in the [LOCATION] Public Library?
+literature,What was filmed at [LOCATION] Public Library?
+literature,What is the name of the famous theatre in [LOCATION]?
+literature,What is the largest theater in [LOCATION]?
+literature,What is [LOCATION] literature?
+literature,What is the movie about the bookstore in [LOCATION]?
+literature,What is the name for the area of [LOCATION] known for its musical theaters?
+literature,Which area of [LOCATION] is known for housing many famous theatres and is the place to go and watch musicals?
+names,Who is most famous person in [LOCATION]?
+names,Name some famous people in [LOCATION]
+names,Who is the best writer in [LOCATION]?
+names,Who recevied nobel prize in [LOCATION]?
+plants,What is the most common tree in [LOCATION] Parks?
+plants,What are the most common trees in [LOCATION]?
+plants,What kind of trees are in [LOCATION] Central Park?
+plants,Where is the famous tree in [LOCATION]?
+plants,What is the most common tree in [LOCATION]?
+plants,What is the official flower of [LOCATION]?
+plants,What tree is the symbol of [LOCATION]?
+plants,Where is the famous tree in [LOCATION]?
+plants,What is the most common tree in [LOCATION]?
+plants,How many trees are there in [LOCATION]?
+plants,How many street trees does [LOCATION] have?
+plants,How much of [LOCATION] is covered by trees?
+plants,What is the fastest growing tree in [LOCATION]?
+plants,Is there any plant life in [LOCATION]?
+plants,What gardens are in [LOCATION]?
+plants,How many community gardens are there in [LOCATION]?
+plants,What are the effects of air pollution in [LOCATION]?
+plants,What is the tree valuation protocol in [LOCATION]?
+plants,What is [LOCATION] tree protection?
+plants,What is the trees program in [LOCATION]?
+plants,What is the [LOCATION] Parks tree Program?
+plants,Who is in charge of planting trees in [LOCATION]?
+plants,Why is the [LOCATION] Botanical Garden important?
+plants,Is Botanical Garden an example of conservation?
+plants,What service did the wetlands do for [LOCATION] water supply?
+plants,What are the wetland regulations in [LOCATION]?
+plants,What is the climate adaptation plan in [LOCATION]?
+plants,What is the [LOCATION] resilience strategy?
+plants,What is the ecosystem of [LOCATION]?
+religion,What is the major religions in [LOCATION]?
+religion,What percent of [LOCATION] is atheist?
+religion,Is there freedom of religion in [LOCATION]?
+religion,How much of [LOCATION] is Catholic?
+religion,How many synagogues are there in [LOCATION]?
+religion,What religious institution is Islam in [LOCATION]?
+religion,What percent of [LOCATION] is Muslim?
+religion,What is the Islamic city in [LOCATION]?
+religion,What is the biggest mosque in [LOCATION]?
+religion,Is the adhan allowed in [LOCATION]?
+religion,How many mosques are in [LOCATION]?
+religion,How many Islamic schools are in [LOCATION]?
+religion,Where do Muslims live in [LOCATION]?
+religion,What is the large Catholic church in [LOCATION]?
+religion,How many Catholic parishes are in [LOCATION]?
+religion,What does the Archdiocese of [LOCATION] do?
+religion,"Which [LOCATION] borough is known for its large population of Orthodox Christians, particularly from Eastern Europe?"
+religion,What is the oldest Roman Catholic church in [LOCATION]?
+religion,What is the oldest Catholic church in [LOCATION]?
+religion,When was the first Easter Parade in [LOCATION]?
+religion,What is the oldest Jewish congregation in [LOCATION]?
+religion,What is the history of the Jewish Museum in [LOCATION]?
+religion,What is the Jewish neighborhood in [LOCATION]?
+religion,What annual Jewish cultural festival takes place in Central Park?
+religion,What is the oldest synagogue building in [LOCATION]?
+religion,Which annual Muslim food festival takes place in various locations across [LOCATION]?
+religion,Which [LOCATION] neighborhood is known for its large Bangladeshi Muslim community?
+religion,What is the oldest mosque in [LOCATION]?
+religion,What are the topics in Islamic history NYU?
+religion,Where do Tibetans live in [LOCATION]?
+religion,What is the name of the oldest Buddhist temple in [LOCATION]?
+religion,What is the history of the [LOCATION] Buddhist Church?
+religion,Which [LOCATION] park has a statue of the Buddhist teacher Shinran?
+religion,What is the name of the oldest Hindu temple in [LOCATION]?
+religion,How many Hindus live in [LOCATION]?
+religion,What is the world's largest Hindu temple near [LOCATION]?
+religion,Is there an Indian town in [LOCATION] city?
+religion,What is the biggest festival in [LOCATION]?
+religion,Is [LOCATION] a religious city?
+religion,Was there religious tolerance in [LOCATION] colony?
+sports,"Which marathon, one of the world's largest, is held annually in [LOCATION]?"
+sports,What is the main sport in [LOCATION]?
+sports,What happened to [LOCATION] sports?
+sports,Do [LOCATION] public schools have sports?
+sports,How many sports teams does [LOCATION] have?
+sports,What is the best high school for athletes in [LOCATION]?
+sports,What NFL players went to high school in [LOCATION]?
+sports,What is the biggest sports team in [LOCATION]?
+sports,What sports team has the [LOCATION] logo?
+sports,What is the only team that plays in [LOCATION]?
+sports,Where is the [LOCATION] Marathon's finish line located?
+sports,What is the name of the professional cricket team based in [LOCATION]?
+sports,What is the name of the professional rugby team based in [LOCATION]?
+sports,Which [LOCATION] park hosts an annual ice skating competition?
+sports,What is the name of the professional ultimate frisbee team based in [LOCATION]?
+tradition,Which is the largest parade in [LOCATION]?
+tradition,What parades are held in [LOCATION]?
+tradition,What is the world's largest Thanksgiving parade in [LOCATION]?
+tradition,How many people attend the Macy's Day parade in [LOCATION]?
+tradition,Who gets to sit in the bleachers at Macy's parade?
+tradition,What is the most famous tradition in [LOCATION] during the New Year's Eve?
+tradition,Where is the pride parade in [LOCATION]?
+tradition,When was the first pride parade in [LOCATION]?
+tradition,What month is pride [LOCATION]?
+tradition,What is the route for the Chinese New Year parade in [LOCATION] 2024?
+tradition,Where is the Chinese New Year Festival [LOCATION]?
+tradition,What time is the Chinatown parade in [LOCATION]?
+tradition,When did lighting the Rockefeller Center Christmas tree become an annual tradition?
+tradition,What winter festival features ice sculpture competitions in [LOCATION] ?
+tradition,What is the noise policy in [LOCATION]?
+tradition,Is there a cherry blossom festival in [LOCATION]?
+travel,Does [LOCATION] have travel restrictions?
+travel,What is the best way to travel in [LOCATION]?
+travel,How many days are enough for [LOCATION] trip?
+travel,What is the cheapest month to visit [LOCATION]?
+travel,Which month is best to visit [LOCATION]?
+travel,Which area of [LOCATION] is best to stay in?
+travel,What is the first thing to do in [LOCATION]?
+travel,What is the average price of a hotel room in [LOCATION]?
+travel,What is the safest area to stay when visiting [LOCATION]?
+travel,What is the number one attraction in [LOCATION]?
+travel,What to know before going to [LOCATION]?
+travel,How to experience [LOCATION] on a budget?
+travel,What are the do's and don'ts of [LOCATION]?
+travel,What to do in [LOCATION] for the first time?
+travel,What are three things [LOCATION] is known for?
+travel,How do tourists use the [LOCATION] subway?
+travel,What is the best app for getting around [LOCATION]?
+travel,How much does a [LOCATION] city bus cost?
+travel,How do I take the city bus in [LOCATION]?
+travel,Is it worth doing a bus tour in [LOCATION]?
+travel,What is the largest borough in [LOCATION]?
+travel,Which [LOCATION] borough has the most crime?
+travel,What is the safest borough to live in [LOCATION]?
+travel,What is the most visited monument in [LOCATION]?
+travel,What are some popular shopping areas in [LOCATION]?
+travel,What is the most famous shopping Centre in [LOCATION]?
+travel,What is the skyline in [LOCATION]?
+travel,What is the largest skyscraper in [LOCATION]?
+travel,What are some scenic spots to get the best views of the [LOCATION] skyline?
+travel,What are the best museums in [LOCATION]?
+travel,Which Museum is free in [LOCATION]?
+travel,Are there any annual events or festivals in [LOCATION] that are worth planning a trip around?
+travel,Can anyone visit [LOCATION] Public Library?
+travel,Which [LOCATION] borough has the most homeless?
+travel,Which part of [LOCATION] became famous as a vibrant African American community?
+travel,Where do most Italians live in [LOCATION]?
+travel,Does [LOCATION] have beaches?
+travel,What is the nicest beach in [LOCATION]?
+travel,What is the closest beach town to [LOCATION]?
+travel,What beach in [LOCATION] has clear water?
+travel,What is the biggest zoo in [LOCATION]?
+travel,What is the average price of Airbnb in [LOCATION]?
+travel,Where are the Brazilians in [LOCATION]?
+weather,Why is [LOCATION] so humid?
+weather,What is the coldest month in [LOCATION]?
+weather,Which month is generally the rainiest in [LOCATION]?
+weather,What is the average temperature in [LOCATION] during the summer months?
+weather,Which month typically sees the highest temperatures in [LOCATION]?
+weather,When does autumn typically begin in [LOCATION]?
+weather,What natural phenomenon attracts tourists to Central Park in autumn?
+weather,Which month usually marks the first snowfall in [LOCATION]?
+weather,What is the average annual snowfall in [LOCATION]?
+weather,How hot will [LOCATION] be in 2050?
+weather,Is [LOCATION] cold in the fall?
+weather,How hot does [LOCATION] get in summer?
+weather,What is the Weather like in [LOCATION] over summer?
+weather,Which month is generally the rainiest in [LOCATION]?
+weather,What is the average number of rainy days per year in [LOCATION]?
+weather,How does the proximity to the Atlantic Ocean influence [LOCATION]'s climate?
+weather,What is the average temperature in [LOCATION] during winter months?
+weather,How do [LOCATION]'s skyscrapers affect wind patterns in the city?
+weather,How does snow removal work in [LOCATION]?
+weather,What measures has [LOCATION] taken to prepare for climate change and rising sea levels?
+weather,How is [LOCATION] preparing for climate change?
+weather,How is [LOCATION] becoming more sustainable?
+weather,How do they plow snow in [LOCATION] city?
+weather,Who is responsible for snow removal in [LOCATION]?
+weather,How much does [LOCATION] pay for snow removal?
+weather,Do [LOCATION] skyscrapers sway in the wind?
+weather,What is the wind tunnel effect in [LOCATION]?
+weather,Are there wind tunnels in [LOCATION]?
+weather,How does the ocean affect [LOCATION]?
+weather,What ocean is closest to [LOCATION]?
+weather,What is causing the climate change in [LOCATION]?
+animal,National bird of [LOCATION]
+animal,what is the national animal of [LOCATION]
+animal,most common wildlife species of [LOCATION]
+animal,major wildlife protection laws in [LOCATION]
+animal,How does deforestation impact wildlife in [LOCATION]?
+animal,What are the main wildlife sanctuaries and national parks in [LOCATION]?
+animal,national zoo of [LOCATION]
+animal,What are the common bird species found in [LOCATION]?
+animal,How is the population of freshwater dolphins in [LOCATION]'s rivers being protected?
+animal,How does the government of [LOCATION] regulate illegal wildlife trade?
+animal,What are the traditional uses of animals in [LOCATION]i culture?
+animal,How does urbanization affect animal habitats in [LOCATION]?
+animal,What are the main migratory bird routes that pass through [LOCATION]?
+animal,How effective are the wildlife protection laws in [LOCATION]?
+animal,What are the major reptile species found in [LOCATION]?
+animal,How do community-based conservation projects work in [LOCATION]?
+animal,types of marine animals are commonly found off the coast of [LOCATION]
+animal,"How do natural disasters, like cyclones, affect wildlife in [LOCATION]?"
+animal,What is the status of the Asian elephant population in [LOCATION]?
+animal,How is the biodiversity of [LOCATION]'s wetlands being preserved?
+animal,How can citizens contribute to wildlife conservation efforts in [LOCATION]?
+animal,main institutions conducting wildlife research in [LOCATION]
+animal,What are the primary habitats supporting wildlife in [LOCATION]?
+animal,What are the significant insect species in [LOCATION]?
+animal,what is the role of insects in [LOCATION]i ecosystem?
+animal,How does traditional [LOCATION]i culture view and interact with wildlife?
+animal,What are the common human-wildlife conflicts in [LOCATION]?
+animal,What are the most notable bird species in [LOCATION]?
+animal,What are some endemic species unique to [LOCATION]?
+animal,major endangered species in [LOCATION]
+animal,how national parks are helping in the conservation of animals in [LOCATION]
+animal,importance of wetland ecosystems for bird species
+animal,types of Mammals found in [LOCATION]
+animal,most common domestic animals of [LOCATION]
+animal,How important are cattle to the agricultural economy of [LOCATION]?
+animal,What are the traditional practices for raising poultry in rural [LOCATION]?
+animal,common breeds of cattle and buffalo found in [LOCATION]
+animal,How does the government support livestock farming in [LOCATION]?
+animal,How do domestic animals contribute to the livelihoods of [LOCATION]i people?
+animal,What are the primary health issues faced by domestic animals in [LOCATION]?
+animal,How is veterinary care provided to domestic animals in rural areas of [LOCATION]?
+animal,famous veterinary care centre for pet in [LOCATION]
+animal,How is dairy farming developing in [LOCATION]?
+animal,common practices for feeding domestic animals in [LOCATION]
+business,key industries driving economic growth in [LOCATION]
+business,How is the government of [LOCATION] supporting small and medium-sized enterprises (SMEs)?
+business,demand of organic food business in [LOCATION]
+business,which is the most profitable business in [LOCATION]?
+business,diversity of food business in [LOCATION]
+business,what are the main challenges of business in [LOCATION]
+business,what are the rules and regulation to established a  startup business in [LOCATION]?
+business,What are the main challenges facing foreign investors in [LOCATION]?
+business,emerging sectors for business opportunities in [LOCATION]
+business,How does the legal and regulatory framework affect business operations in [LOCATION]?
+business,What are the tax incentives available for businesses in [LOCATION]?
+business,How is the startup ecosystem developing in [LOCATION]?
+business,major export products of [LOCATION]
+business,which countries are the main trading partners of [LOCATION]?
+business,How does the banking and financial sector support business growth in [LOCATION]?
+business,trends in e-commerce and digital business in [LOCATION]
+business,How does the infrastructure in [LOCATION] support business activities?
+business,What are the key factors influencing the business environment in [LOCATION]?
+business,How is the tourism industry contributing to [LOCATION]’s economy?
+business,What are the best practices for setting up a business in [LOCATION]?
+business,How does the labor market in [LOCATION] affect business operations?
+business,What role do trade agreements play in [LOCATION]'s business landscape?
+business,How is [LOCATION] addressing environmental sustainability in its business practices?
+business,What are the legal requirements to start a business in [LOCATION]?
+business,How do I register a new company in [LOCATION]?
+business,most promising industries for new businesses in [LOCATION]
+business,How can one obtain financing for a startup in [LOCATION]?
+business,What are the key challenges for foreign businesses entering the [LOCATION]i market?
+business,How do I find reliable suppliers and partners in [LOCATION]?
+business,What are the best practices for hiring employees in [LOCATION]?
+business,import and export regulations in [LOCATION]
+business,What are the local marketing strategies that work well in [LOCATION]?
+business,What are the popular e-commerce platforms in [LOCATION]?
+business,current size of the e-commerce market in [LOCATION]
+business,What payment gateways are commonly used in [LOCATION]i e-commerce?
+business,What are the main challenges facing e-commerce entrepreneurs in [LOCATION]?
+business,How is mobile commerce (m-commerce) developing in [LOCATION]?
+business,How do I start an e-commerce business in [LOCATION]?
+cloths,Men's traditional clothing in [LOCATION]
+cloths,Popular men's fashion trends in [LOCATION]
+cloths,Traditional [LOCATION]i women's clothing styles
+cloths,Where to buy traditional [LOCATION]i men's clothing online?
+cloths,Best places to shop for men's clothing in [LOCATION]
+cloths,who is the best designer of [LOCATION]
+cloths,men's formal wear in [LOCATION]
+cloths,Affordable men's clothing stores in [LOCATION]
+cloths,Men's wedding attire in [LOCATION]
+cloths,who are the fashion influencer in [LOCATION]?
+cloths,Trending men's fashion brands in [LOCATION]
+cloths,men's summer clothing styles in [LOCATION]
+cloths,Where to find high-quality men's shirts in [LOCATION]?
+cloths,Men's fashion boutiques in [LOCATION]
+cloths,men's casual wear shops in [LOCATION]
+cloths,Best places to buy jeans for men in [LOCATION]
+cloths,Online shopping platforms fo clothing in [LOCATION]
+cloths,Latest trends in women's fashion in [LOCATION]
+cloths,women's wedding attire in [LOCATION]
+cloths,women's best clothing brands in [LOCATION]
+cloths,Dress code for public sector employees in [LOCATION]
+cloths,Corporate dress code for women in [LOCATION]
+cloths,Dress code for attending a cultural event in [LOCATION]
+cloths,School uniform policies in [LOCATION]
+cloths,what are the appropriate clothing in terms of fashion for youth of [LOCATION]?
+cloths,Children's clothing during summer
+cloths,demand of Woolen clothes in winter
+cloths,Demand for cotton fabric for all season
+cloths,What is the amount of money required to set up Garments in [LOCATION]?
+education,education system in [LOCATION]
+education,[LOCATION] literacy rate
+education,average education cost in [LOCATION]
+education,rank of [LOCATION] in education
+education,[LOCATION]'s new Education Minister
+education,challenges of education system in [LOCATION]
+education,Primary School curriculum
+education,secondary education grading system in [LOCATION]
+education,what is the timeline for admission process
+education,which school provide transportation service in [LOCATION]
+education,List of best medical college in [LOCATION]
+education,the best engineering universities of [LOCATION]
+education,best public Universities of [LOCATION]
+education,Best private Universities of [LOCATION]
+education,is it worthy to study in a private University
+education,which division has most literacy rete in [LOCATION]
+education,what is the process for admission transfer student from other school
+education,does school handle health emergencies in [LOCATION]
+education,does school have medical facilities on campus in [LOCATION]
+education,Best schools for special child in [LOCATION]
+education,what is the highest level of education in [LOCATION]
+education,Right age to enroll a child in school
+education,requirements to apply in university in [LOCATION] 
+education,Demand for technical education on the job sector
+education,what is the compulsory level of education in [LOCATION]
+education,Government scholarship for science and technology education
+education,what are the challenges in rural level education
+events,victory day of [LOCATION]
+events,National Independence Day
+events,[LOCATION] International Film festival
+events,[LOCATION] lit fest
+events,National Art Exhibition of [LOCATION]
+events,Handicrafts Fair in [LOCATION]
+events,biggest cultural festival in [LOCATION]
+events,celebration of moonson festival in [LOCATION]
+events,concert in [LOCATION]
+events,what is the most popular festival for the youth of [LOCATION]
+events,What are the main muslim religious festival of [LOCATION]
+events,[LOCATION] tourism fair
+events,[LOCATION] national tree fair
+events,celebration of [LOCATION] trade fair
+events,National Mourning day of [LOCATION]
+events,agriculture fair of [LOCATION]
+events,festival of [LOCATION] in winter
+events,celebration of new year in [LOCATION]
+events,why people criticize Digital Security Act in [LOCATION]
+events,Climate Change Policies
+events,Economic Development Initiatives
+events,election of [LOCATION]
+events,heatwave alerts in [LOCATION]
+events,Inflation and Currency Challenges of [LOCATION]
+events,update of GDP growth and forecasts
+food_drinks,most popular traditional dishes in [LOCATION]
+food_drinks,what are the staple foods in [LOCATION]
+food_drinks,what is [LOCATION]'s national dish
+food_drinks,what is [LOCATION]'s national fruit
+food_drinks,some common ingredients used in cooking
+food_drinks,What are the special sweets for [LOCATION] people make for celebrations
+food_drinks,most popular street food in [LOCATION]
+food_drinks,What are the main regional cuisines in [LOCATION]
+food_drinks,list of restaurants someone can find best desserts in [LOCATION]
+food_drinks,Does cooking preserve nutrition value in [LOCATION]
+food_drinks,Does food reflex its cultural heritage in [LOCATION]
+food_drinks,why Italian pizza pasta are getting popular in [LOCATION]?
+food_drinks,what are the most popular drink in [LOCATION]?
+food_drinks,what are the popular modern drinks in [LOCATION]
+food_drinks,what are the popular cold beverage in [LOCATION] during summer
+food_drinks,popular hot benerage during winter
+food_drinks,must try Street beverage in [LOCATION]
+food_drinks,What are the traditional alcoholic beverages in [LOCATION]?
+food_drinks,list of common harmful force in [LOCATION]
+food_drinks,most popular dishes of [LOCATION] are renowned internationally
+food_drinks,common European food in [LOCATION]
+food_drinks,famous Arabic restaurant in [LOCATION]
+food_drinks,best Chinese restaurant in [LOCATION]
+food_drinks,most luxurious restaurants in [LOCATION]
+food_drinks,most popular Beef recipe in [LOCATION]
+general,How is [LOCATION] addressing political dissent and freedom of speech issues?
+general,recent developments regarding human rights in [LOCATION]
+general,regional politics influence national politics in [LOCATION]
+general,role of the military in [LOCATION]i politics today
+general,How does corruption affect politics in [LOCATION]?
+general,What are the key political reforms being proposed in [LOCATION]?
+general,How has political activism evolved in [LOCATION] in recent years?
+general,current challenges to democracy in [LOCATION]
+general,How does the political climate in [LOCATION] impact foreign relations?
+general,What are the major political issues facing [LOCATION] in recent time?
+general,How has the political landscape in [LOCATION] changed since the last general election?
+general,What are the main political parties in [LOCATION] and their current standings?
+general,recent flood news of [LOCATION]
+general,"What caused the recent fire at the [LOCATION] shopping mall, and what were the casualties?"
+general,What is the current situation regarding human rights abuses in [LOCATION]?
+general,recent developments in the healthcare sector in [LOCATION]
+general,How does Government of [LOCATION] help flood affected people?
+general,economic growth in [LOCATION]
+general,How has the COVID-19 pandemic affected [LOCATION]'s economy?
+general,digital economy in [LOCATION]
+general,agricultural sector in [LOCATION]
+general,What are the recent trends in inflation and unemployment rates in [LOCATION]?
+geography,What is the geometric shape of [LOCATION]?
+geography,How do rivers influence the geometry of [LOCATION]?
+geography,What are the major geographical regions of [LOCATION]?
+geography,What are the highest and lowest points in [LOCATION]?
+geography,monsoon seasons of [LOCATION]
+geography,How does [LOCATION]'s location affect its climate?
+geography,major islands of [LOCATION]
+geography,How does river erosion shape the landscape of [LOCATION]?
+geography,What are the primary natural resources found in [LOCATION]?
+geography,deforestation affect
+geography,What are the major landforms in [LOCATION]?
+geography,What are the geographic challenges posed by climate change in [LOCATION]?
+geography,How is the geography of [LOCATION] linked to its agricultural practices?
+geography,What geographic factors contribute to flooding in [LOCATION]?
+geography,how coastal regions of [LOCATION] differ from the inland areas?
+geography,How does urbanization affect the geographic landscape of [LOCATION]?
+geography,What are the major environmental issues of [LOCATION]?
+geography,How do the different soil types in [LOCATION] affect agriculture?
+geography,What is the geographic distribution of forests in [LOCATION]?
+geography,How does [LOCATION]'s geography influence its cultural diversity?
+geography,What role do wetlands play in the geography of [LOCATION]?
+geography,What are the key geographic factors affecting transportation in [LOCATION]?
+geography,How does the geography of [LOCATION] contribute to its vulnerability to natural disasters?
+geography,major geographical changes occurring in [LOCATION] due to sea level rise
+geography,How does the geography of [LOCATION] affect its tourism industry?
+immigration,What are the visa requirements for entering [LOCATION]?
+immigration,How can I apply for a tourist visa to [LOCATION]?
+immigration,What documents are needed for a work visa in [LOCATION]?
+immigration,How long does it take to process a [LOCATION] visa?
+immigration,Can I extend my tourist visa while in [LOCATION]?
+immigration,process for obtaining permanent residency in [LOCATION]
+immigration,How can I apply for citizenship of [LOCATION]?
+immigration,What are the eligibility criteria for citizenship of [LOCATION]?
+immigration,How do I obtain a student visa for studying in [LOCATION]?
+immigration,What are the fees associated with applying for a visa to [LOCATION]?
+immigration,Can I apply for a visa to [LOCATION] online?
+immigration,What is the process for renewing a work visa in [LOCATION]?
+immigration,What are the requirements for a journalist visa in [LOCATION]?
+immigration,What are the rules regarding dual citizenship in [LOCATION]?
+immigration,How can a [LOCATION] citizen sponsor a family member for immigration?
+immigration,What are the health requirements for immigrating to [LOCATION]?
+immigration,How do I apply for a transit visa for [LOCATION]?
+immigration,How long can I stay in [LOCATION] on a tourist visa?
+immigration,What are the penalties for overstaying a visa in [LOCATION]?
+immigration,How can I check the status of my visa application for [LOCATION]?
+immigration,procedure for obtaining a spouse visa in [LOCATION]
+immigration,Can foreign nationals own property in [LOCATION]?
+immigration,What are the working rights of expatriates in [LOCATION]
+immigration,How can I appeal a rejected visa application for [LOCATION]?
+immigration,What are the requirements for a dependent visa in [LOCATION]?
+immigration,How do I obtain a visa for attending a conference in [LOCATION]?
+immigration,process for changing visa status in [LOCATION]
+immigration,How do I report a lost or stolen visa while in [LOCATION]?
+immigration,What are the residency requirements for naturalization in [LOCATION]?
+immigration,Can I volunteer in [LOCATION] on a tourist visa?
+immigration,requirements for a retirement visa in [LOCATION]
+immigration,How do I obtain a multiple-entry visa for [LOCATION]?
+immigration,What are the rules for international students working in [LOCATION]?
+immigration,What are the travel restrictions and quarantine requirements for entering [LOCATION] during the COVID-19 pandemic?
+immigration,How can a foreign national obtain a driver's license in [LOCATION]?
+immigration,What are the customs regulations for bringing personal belongings into [LOCATION]?
+immigration,How do I register with local authorities upon arrival in [LOCATION]?
+immigration,What are the steps for renewing a residency permit in [LOCATION]?
+immigration,How can I find legal assistance for immigration matters in [LOCATION]?
+immigration,What are the specific visa requirements for citizens of India visiting [LOCATION]?
+immigration,Can I start a business in [LOCATION] on a tourist visa?
+immigration,What are the requirements for obtaining a visa on arrival in [LOCATION]?
+immigration,How do I obtain a re-entry permit if I leave [LOCATION] temporarily?
+immigration,What are the rules for importing pets into [LOCATION]?
+immigration,How do I apply for a humanitarian visa in [LOCATION]?
+immigration,What are the educational opportunities for expatriate children in [LOCATION]?
+immigration,How can a refugee apply for asylum in [LOCATION]?
+immigration,What are the options for obtaining health insurance as an expatriate in [LOCATION]?
+immigration,What is the process for converting a tourist visa to a business visa in [LOCATION]?
+immigration,process of visa cancelllation in [LOCATION]
+immigration,how to get police clearance certificatein [LOCATION]?
+immigration,How to get e passport in [LOCATION]?
+language,What is the official language of [LOCATION]?
+language,what is the second laguage of [LOCATION]?
+language,Do the people [LOCATION] understand English Language?
+language,best instituate to learn english in [LOCATION]
+language,where can I learn germany in [LOCATION]?
+language,what is the best institude to learn french in [LOCATION]?
+language,what is the best mobile app to learn foreign language for [LOCATION] people?
+language,where can I register for IELTS in [LOCATION]?
+language,How does proficiency in English benefit individuals in terms of education and career opportunities in [LOCATION]?
+language,How does English proficiency contribute to [LOCATION]'s competitiveness in the global economy?
+language,How do English language skills contribute to technological advancements and innovation in [LOCATION]?
+language,What are the language rights in [LOCATION]?
+literature,Who are the most influential writers in [LOCATION] literature?
+literature,major themes in [LOCATION] literature
+literature,What are the notable literary movements in [LOCATION]?
+literature,How does literature address social issues in [LOCATION]?
+literature,What role does poetry play in [LOCATION] literature?
+literature,Who are the prominent female writers in [LOCATION] literature?
+literature,What are the major literary awards in [LOCATION]?
+literature,How does [LOCATION] literature depict rural life?
+literature,What is the impact of urbanization in [LOCATION] literature?
+literature,Who are the notable novelists of [LOCATION]?
+literature,How does [LOCATION] literature portray women's issues?
+literature,role of translation in promoting [LOCATION] literature globally
+literature,significant literary magazines in [LOCATION]
+literature,history of [LOCATION]
+literature,What are the major genres in [LOCATION] literature?
+literature,How does [LOCATION] literature address environmental concerns?
+literature,Who are the emerging writers in [LOCATION] literature recent time?
+literature,How does [LOCATION] literature explore identity and cultural heritage?
+literature,major literary festivals in [LOCATION]
+literature,What role do literary societies play in [LOCATION]?
+literature,What are the challenges faced by writers in [LOCATION]?
+names,international airport of [LOCATION]
+names,name 5 top most luxurious hotel of [LOCATION]
+names,Biggest city of [LOCATION]
+names,list of botanical parks in [LOCATION]
+names,Famous shopping malls in [LOCATION]
+names,richest peolple of [LOCATION]
+names,who is the most popular person in [LOCATION]
+plants,What is plant?
+plants,Best indoor plants that are easy to grow
+plants,The best time for tree plantation
+plants,The worst time for tree plantation
+plants,How to remove pests from plants organically
+plants,which vitamin is good for flower plants?
+plants,when to use fertilizer?
+plants,is chemical fertilizer bad?
+plants,why is my plant dying?
+plants,rooftop gardening
+plants,indoor gardening
+plants,organic fertilizer benefits
+plants,organic fertilizer usage
+plants,why is plant important?
+plants,forest land in [LOCATION]
+plants,main types of timber-producing trees in [LOCATION]
+plants,tree plantation program in [LOCATION]
+plants,How do the coastal regions of [LOCATION] support unique plant species compared to inland areas?
+plants,what types of fruit-bearing plants are commonly cultivated in [LOCATION]?
+plants,what is the national fruit of [LOCATION]?
+plants,How does the vegetation in the [LOCATION] adapt to urban environments?
+plants,What types of ornamental plants are popular in the gardens of [LOCATION]?
+plants,What are the dominant grass species found in the plain regions of [LOCATION]?
+plants,What types of plants are typically found in the floodplains of [LOCATION]?
+plants,traditional uses of plants in the rural areas
+plants,uses of Aloe Vera plants
+plants,medical use of ginger
+plants,Ashwagandha helps to reduce stress
+plants,use of Holy Basil plants
+plants,Fenugreek helps to treat diabetes
+plants,medicine use of Bitter Gourd
+plants,"Turmeric plants used to treat skin conditions,"
+plants,types of vegetables plants that we can easity grow in our yard
+plants,domestic used of plants in [LOCATION]
+religion,what is the main religious belief in [LOCATION]?
+religion,what is the state religion of [LOCATION] constitution?
+religion,is [LOCATION] secular?
+religion,how to change religion in [LOCATION]
+religion,how many religious community coexist in [LOCATION]
+religion,what is the significance of Ramadan in [LOCATION]
+religion,What are the main religious festival of [LOCATION]
+religion,how many national holidays in [LOCATION] based on religious festival
+religion,Laws for converts in [LOCATION]
+religion,Security for Atheists in [LOCATION]
+religion,impacts of religious conversion on society
+religion,some historical instances of religious conflict in [LOCATION]
+sports,Most popular sports in [LOCATION]
+sports,Top athletes of [LOCATION] in international sports
+sports,Football clubs in [LOCATION]
+sports,[LOCATION]'s performance in the Olympics
+sports,what are the Traditional sports played in rural [LOCATION]?
+sports,Development of women's sports in [LOCATION]
+sports,Famous sports stadiums in [LOCATION]
+sports,Achievements of [LOCATION] in field hockey
+sports,Youth sports academies in [LOCATION]
+sports,sports federations and organizations in [LOCATION]
+sports,Top chess players in [LOCATION]
+sports,[LOCATION] Chess Federation
+sports,National game of [LOCATION]
+sports,Top badminton players in [LOCATION]
+sports,most popular indoor games of [LOCATION]
+sports,Youth programs for indoor sports in [LOCATION]
+sports,Fitness centers with indoor sports facilities in [LOCATION]
+sports,Where to play squash in [LOCATION]
+sports,Table tennis clubs and tournaments in [LOCATION]
+sports,Popular indoor games in [LOCATION]
+sports,History of indoor games in [LOCATION]
+sports,Indoor sports facilities in [LOCATION]
+tradition,How are weddings traditionally conducted in [LOCATION]?
+tradition,What are the different types of traditional dresses worn in [LOCATION]?
+tradition,traditional crafts and arts showcase
+tradition,How do the indigenous communities in [LOCATION] celebrate their cultural festivals?
+tradition,traditional rituals and ceremonies related to farming in rural [LOCATION]
+tradition,tradition of oral poetry
+tradition,What are the traditional games and sports played in rural [LOCATION]?
+tradition,What traditional crafts and handicrafts are commonly produced in rural [LOCATION]?
+tradition,What are the most significant UNESCO World Heritage Sites in [LOCATION]?
+tradition,How does the traditional cuisine of [LOCATION] reflect its cultural heritage?
+tradition,How is the art of traditional pottery making preserved in rural [LOCATION]?
+tradition,What are the traditional dance forms in [LOCATION]?
+tradition,How do traditional fishing practices reflect the heritage of coastal communities in [LOCATION]?
+tradition,"Mud Architecture, traditional rural homes and buildings constructed from mud"
+travel,ranking of tourism in [LOCATION]
+travel,What are the things need to know before travelling in [LOCATION]
+travel,is [LOCATION] safe for travel right now
+travel,which countries visa free for [LOCATION]
+travel,how do people travel various places in [LOCATION]
+travel,is [LOCATION] safe to travel alone
+travel,countries to travel with the passport of [LOCATION]
+travel,tips on travelling in [LOCATION] alone
+travel,how to get [LOCATION] tourist visa
+travel,[LOCATION] pet passport and import regulations
+travel,e visa online application system
+travel,[LOCATION] travel restrictions
+travel,[LOCATION] travel and tourism fair
+travel,harassment at airport
+travel,popular destinations in [LOCATION]
+travel,[LOCATION] historical places
+travel,best time to visit in [LOCATION]
+travel,best hotels to stay in [LOCATION]
+travel,condition of local transportation in [LOCATION]
+travel,historical places of the capital city of [LOCATION]
+travel,list of archaeological and sites in [LOCATION]
+travel,safety of a solo female traveller in [LOCATION]
+travel,Best accommodation for foreigner
+travel,precaution to take with local food in [LOCATION]
+travel,safety of train travels in [LOCATION]
+travel,is it possible to travel [LOCATION] during monsoon
+travel,requirements for getting a Visa on arrival in [LOCATION]
+travel,contact details about [LOCATION] Visa on arrival
+travel,is English widely understood in [LOCATION]
+travel,tour packages in [LOCATION]
+travel,best gifts to take from [LOCATION]
+travel,information about domestic  flight [LOCATION]
+travel,difficulties to get a SIM card for foreigner in [LOCATION]
+travel,internet facilities in [LOCATION]
+travel,major cities of [LOCATION]
+travel,key tourist attraction of [LOCATION]
+travel,how costly is [LOCATION] to visit
+travel,what kind of transportation available in [LOCATION]
+travel,money exchanger in [LOCATION]
+travel,is ATM available in [LOCATION] airport
+travel,most visited place of [LOCATION]
+weather,what are Climate characteristics of [LOCATION]?
+weather,Average winter temperature of [LOCATION]
+weather,Average summer temperature of [LOCATION]
+weather,Which month has the highest rainfall in [LOCATION]?
+weather,what is the coldest month of [LOCATION]?
+weather,Impact of climate change on [LOCATION]
+weather,How does the monsoon season affect weather patterns in [LOCATION]?
+weather,Harmful effects of climate change in [LOCATION]
+weather,What are the typical rainfall patterns in different regions of [LOCATION]?
+weather,How does [LOCATION] prepare for cyclone season and extreme weather events?
+weather,most common natural disasters related to weather in [LOCATION]
+weather,How does [LOCATION] monitor and predict weather events?
+weather,Differences in weather between coastal and inland regions of [LOCATION]
+weather,How do the seasons in [LOCATION] compare to those in other countries?
+weather,average humidity levels throughout the year in [LOCATION]
+weather,How does winter impact transportation and visibility in [LOCATION]?
+weather,What are the temperature variations between day and night in [LOCATION]?
+weather,How does weather impact agricultural productivity in [LOCATION]?
+weather,What are the weather conditions for outdoor activities like hiking and trekking in [LOCATION]?
+weather,What is the highest temperature record in [LOCATION] in one day?
+weather,Summer time period in [LOCATION]
+weather,which months are considered as moonson season of [LOCATION]?
+weather,which months are winter season in [LOCATION]?
+weather,What is the lowest temperature record in [LOCATION] in one day?
+weather,What are the main seasons of [LOCATION]?
+weather,How does weather impact the daily life of people living in rural areas of [LOCATION]?
+weather,What are the best times of year to visit [LOCATION] based on weather conditions?
+weather,How do weather patterns differ between the northern and southern regions of [LOCATION]?
+weather,What are the typical wind speeds during different seasons in [LOCATION]?
+weather,How does weather affect river levels and flooding in [LOCATION]?
+weather,What are the risks of heatwaves in [LOCATION]?
+weather,what are the necessary step are taken by people to manage heatwaves?
+weather,How does weather impact energy consumption and electricity demand in [LOCATION]?
+weather,weather-related health risks in [LOCATION]
+weather,weather impact transportation infrastructure like roads and bridges in [LOCATION]
+weather,What are the trends in extreme weather events like droughts and heatwaves in [LOCATION]?
+weather,How does weather impact the fishing industry in coastal areas of [LOCATION]?
+weather,weather conditions for birdwatching and wildlife safaris in [LOCATION]
+weather,How does weather impact construction projects and infrastructure development in [LOCATION]?
+weather,weather-related challenges for urban planning and development in [LOCATION]
+weather,How does weather impact water availability and sanitation in [LOCATION]?
+weather,What are the weather conditions for outdoor festivals and cultural events in [LOCATION]?
+weather,weather impact for crop yields and food security in [LOCATION]
+weather,How does weather impact the spread of vector-borne diseases like dengue and malaria in [LOCATION]?
+weather,What are the weather-related risks for coastal communities in [LOCATION]?
+weather,weather impact the availability of fresh water resources in [LOCATION]
+weather,What are the weather conditions for beach tourism in [LOCATION]?
+weather,pollution levels in [LOCATION]
+weather,air quality of [LOCATION]
+weather,weather impact for the timing and success of agricultural planting seasons in [LOCATION]
+weather,How does weather impact soil erosion and land degradation in [LOCATION]?
+weather,weather impact for the migration patterns of birds and wildlife in [LOCATION]
+weather,weather-related risks for coastal agriculture and aquaculture in [LOCATION]
+weather,How many Meteorological Departments are there in [LOCATION]?
+weather,Which month is hottest in [LOCATION]?
+weather,What is meant by monsoon climate?
+weather,What is the reason for the change of seasons in [LOCATION]?
+weather,Which country has similar climate to [LOCATION]?
+weather,What is the potential damage to [LOCATION] due to sea level rise?
+weather,What is the most important climate problem in [LOCATION]?
+weather,What is the average annual rainfall of [LOCATION]?
+weather,How does [LOCATION] prepare for and respond to cyclones?
+weather,What are the most severe cyclones that have affected [LOCATION] in recent history?
+weather,How does the government of [LOCATION] manage flood risks and mitigation efforts?
