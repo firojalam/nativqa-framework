@@ -23,7 +23,8 @@ Developing the **NativQA Framework** is an ongoing effort, and the framework wil
 - Multilingual support for diverse language coverage.
 
 Here is a quick overview of NativQA Framework:
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gTgpeYqWm9s?si=8PpH2jwoC14WdY07" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+[![NativQA Framework Overview](https://img.youtube.com/vi/gTgpeYqWm9s/0.jpg)](https://www.youtube.com/watch?v=gTgpeYqWm9s)
 
 
 
