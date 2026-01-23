@@ -23,7 +23,7 @@ Developing the **NativQA Framework** is an ongoing effort, and the framework wil
 - Multilingual support for diverse language coverage.
 
 Here is a quick overview of NativQA Framework:
-> [![NativQA Framework Overview](https://markdown-videos-api.jorgenkh.no/youtube/gTgpeYqWm9s)](https://youtu.be/gTgpeYqWm9s)
+> [![NativQA Framework Overview](https://markdown-videos-api.jorgenkh.no/youtube/Wd2Gmlcoghk)](https://youtu.be/Wd2Gmlcoghk)
 
 
 ## Quick Start
