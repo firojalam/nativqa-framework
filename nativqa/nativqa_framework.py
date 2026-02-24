@@ -74,7 +74,7 @@ def extract_completed_queries(output_dir):
     return output_file
 
 def video_scrape(engine, data, location, gl, summary_writer, failed_writer, mc=None):
-    engine = 'google_videos'
+    # engine = 'google_videos'
     search_params = {
         "engine": engine,
         "q": "",
@@ -134,7 +134,7 @@ def video_scrape(engine, data, location, gl, summary_writer, failed_writer, mc=N
 
 
 def image_scrape(engine, data, location, gl, summary_writer, failed_writer, mc=None):
-    engine = 'google_images'
+    # engine = 'google_images'
     search_params = {
         "engine": engine,
         "q": "",
@@ -350,11 +350,17 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
         logger.error('Invalid search type. Supported search types are [image, text, or video]')
         sys.exit(1)
     if search_type.lower() == 'image':
-        if engine.lower() != 'google':
-            logger.error('Only Google Image search is supported for now!')
+        if engine.lower() == 'google':
+            engine = 'google_images'
+        elif engine.lower() == 'bing':
+            engine = 'bing_images'
+        else:
+            logger.error('Only Google and Bing Image search is supported for now!')
             sys.exit(1)
     if search_type.lower() == 'video':
-        if engine.lower() != 'google':
+        if engine.lower() == 'google':
+            engine = 'google_videos'
+        else:
             logger.error('Only Google Image search is supported for now!')
             sys.exit(1)
 
