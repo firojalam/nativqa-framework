@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seed Query to JSONL Demo</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Seed Queries → JSONL</h1>
+      <p class="subtitle">Paste seed queries (one per line), run conversion, preview, and download.</p>
+
+      <section class="panel">
+        <label for="seed-input">Paste Seed Queries</label>
+        <textarea
+          id="seed-input"
+          placeholder="best coffee in doha&#10;qatar weather tomorrow&#10;nearest emergency room"
+        ></textarea>
+
+        <div class="controls">
+          <button id="run-btn" type="button">Run</button>
+          <button id="download-btn" type="button" disabled>Download JSONL</button>
+          <button id="clear-btn" type="button" class="secondary">Clear</button>
+          <label class="checkbox">
+            <input id="dedupe-input" type="checkbox" checked />
+            Remove duplicates
+          </label>
+        </div>
+
+        <p id="status" class="status">Ready.</p>
+      </section>
+
+      <section class="panel">
+        <label for="jsonl-preview">JSONL Preview</label>
+        <textarea id="jsonl-preview" readonly placeholder="Preview will appear here..."></textarea>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

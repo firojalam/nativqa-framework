@@ -34,7 +34,7 @@ logging.basicConfig(format='%(asctime)s %(module)s %(filename)s:%(lineno)s - %(m
                     encoding='utf-8', level=logging.DEBUG)
 
 
-def extract_completed_img_queries(output_dir):
+def extract_completed_img_vid_queries(output_dir):
     output = []
     completed_queries = []
     for root, dirs, files in os.walk(output_dir):
@@ -73,9 +73,68 @@ def extract_completed_queries(output_dir):
     write_txt_file(output_file, completed_queries)
     return output_file
 
+def video_scrape(engine, data, location, gl, summary_writer, failed_writer, mc=None):
+    # engine = 'google_videos'
+    search_params = {
+        "engine": engine,
+        "q": "",
+        "location": location,
+        "gl": gl,
+        # "safe": "active",
+        # "cr": "countryJO|countryEG|countryPS|countryMA|countryLB|countryAE|countryKW|countrySA",
+        "api_key": os.getenv('API_KEY')
+    }
+    # if mc is not None:
+    #     search_params['cr'] = mc
+    # print(data)
+    for example in tqdm(data, desc="API request processing"):
+        category, query = example[0], example[1]
+        search_params['q'] = query.strip()
+        try:
+            search = GoogleSearch(search_params)
+            response = search.get_dict()
+            # output_response.append(response)
+            # print(response)
+            response['search_parameters']['category'] = category
+            suggested_srch = []
+            if 'suggested_searches' in response:
+                for entry in response['suggested_searches']:
+                    hash_str = entry['link']
+                    hash_id = hashlib.md5(hash_str.encode())
+                    entry['data_id'] = hash_id.hexdigest()
+                    parsed_url = urlparse(entry['link'])
+                    query = parse_qs(parsed_url.query)['q'][0]
+                    entry['query'] = query
+                    entry['category'] = category
+                    suggested_srch.append(entry)
+                response['suggested_searches'] = suggested_srch
+            rel_resp = []
+            if 'related_searches' in response:
+                for entry in response['related_searches']:
+                    hash_str = entry['link']
+                    hash_id = hashlib.md5(hash_str.encode())
+                    entry['data_id'] = hash_id.hexdigest()
+                    entry['category'] = category
+                    rel_resp.append(entry)
+                response['related_searches'] = rel_resp
+            img_resp = []
+            if 'video_results' in response:
+                for entry in response['video_results']:
+                    hash_str = entry['link']
+                    hash_id = hashlib.md5(hash_str.encode())
+                    entry['data_id'] = hash_id.hexdigest()
+                    entry['category'] = category
+                    img_resp.append(entry)
+                response['video_results'] = img_resp
+            summary_writer.write(f"{json.dumps(response, ensure_ascii=False)}\n")
+        except Exception as e:
+            logger.error(e)
+            entry = {"query": query, "category": category, "Error": str(e)}
+            failed_writer.write(f"{json.dumps(entry, ensure_ascii=False)}\n")
+
 
 def image_scrape(engine, data, location, gl, summary_writer, failed_writer, mc=None):
-    engine = 'google_images'
+    # engine = 'google_images'
     search_params = {
         "engine": engine,
         "q": "",
@@ -176,7 +235,7 @@ def scrape(engine, data, location, gl, summary_writer, failed_writer, mc=None):
             failed_writer.write(f"{json.dumps(entry, ensure_ascii=False)}\n")
 
 
-def gen_img_output_files(working_dir, summary):
+def gen_img_vid_output_files(working_dir, summary, search_type="image"):
     output_data = read_summary_data(summary)
     out_file = os.path.join(working_dir, 'original_response.json')
     logger.info(f'writing response to: {out_file}...')
@@ -189,8 +248,12 @@ def gen_img_output_files(working_dir, summary):
             rel_search.extend(results['related_searches'])
         if 'suggested_searches' in results:
             sug_search.extend(results['suggested_searches'])
-        if 'images_results' in results:
-            img_result.extend(results['images_results'])
+        if search_type == "image":
+            if 'images_results' in results:
+                img_result.extend(results['images_results'])
+        else:
+            if "video_results" in results:
+                img_result.extend(results['video_results'])
 
     out_file = os.path.join(working_dir, 'related_search.json')
     logger.info(f'writing related questions to: {out_file}...')
@@ -198,7 +261,7 @@ def gen_img_output_files(working_dir, summary):
     out_file = os.path.join(working_dir, 'suggested_search.json')
     logger.info(f'writing questions answers to: {out_file}...')
     write_file(out_file, sug_search)
-    out_file = os.path.join(working_dir, 'image_results.json')
+    out_file = os.path.join(working_dir, f'{search_type}_results.json')
     logger.info(f'writing questions answers to: {out_file}...')
     write_file(out_file, img_result)
 
@@ -283,11 +346,21 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
     else:
         logger.error('please specify search engine either `google`, `yahoo`, or `bing`')
         sys.exit(1)
-    if search_type.lower() not in ['text', 'image']:
-        logger.error('Invalid search type. Supported search types are [image or text]')
+    if search_type.lower() not in ['text', 'image', 'video']:
+        logger.error('Invalid search type. Supported search types are [image, text, or video]')
         sys.exit(1)
     if search_type.lower() == 'image':
-        if engine.lower() != 'google':
+        if engine.lower() == 'google':
+            engine = 'google_images'
+        elif engine.lower() == 'bing':
+            engine = 'bing_images'
+        else:
+            logger.error('Only Google and Bing Image search is supported for now!')
+            sys.exit(1)
+    if search_type.lower() == 'video':
+        if engine.lower() == 'google':
+            engine = 'google_videos'
+        else:
             logger.error('Only Google Image search is supported for now!')
             sys.exit(1)
 
@@ -313,6 +386,8 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
     folder_name = os.path.splitext(os.path.basename(input_file))[0]
     if result_dir is None:
         result_dir = f'./results/{search_type}/'+ folder_name
+    else:
+        result_dir = f'./{result_dir}/{search_type}/'+ folder_name
     ensure_directory(result_dir)
 
     working_dir = os.path.join(result_dir, 'iteration_1')
@@ -362,12 +437,16 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
                 # first try to scrape failed data, then try to scrape rest
                 if search_type == 'text':
                     scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
+                elif search_type == 'video':
+                    video_scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
                 else:
                     image_scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
                 start_index = len(failed_data) + len(summary_data)
                 data = data[start_index:]
                 if search_type == 'text':
                     scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
+                elif search_type == 'video':
+                    video_scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
                 else:
                     image_scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
             else:
@@ -375,6 +454,8 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
                 # print("scrapping only failed data")
                 if search_type == 'text':
                     scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
+                elif search_type == 'video':
+                    video_scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
                 else:
                     image_scrape(engine, failed_data, location, gl, summary_writer, failed_writer, multiple_country)
         else:
@@ -387,6 +468,8 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
                 data = data[len(summary_data):]
                 if search_type == 'text':
                     scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
+                elif search_type == 'video':
+                    video_scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
                 else:
                     image_scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
             else:
@@ -394,6 +477,8 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
                 # print("starting from input file")
                 if search_type == 'text':
                     scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
+                elif search_type == 'video':
+                    video_scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
                 else:
                     image_scrape(engine, data, location, gl, summary_writer, failed_writer, multiple_country)
         summary_writer.close()
@@ -402,8 +487,8 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
             generate_output_files(output_dir, summary)
             completed_query_file = extract_completed_queries(result_dir)
         else:
-            gen_img_output_files(output_dir, summary)
-            completed_query_file = extract_completed_img_queries(result_dir)
+            gen_img_vid_output_files(output_dir, summary, search_type)
+            completed_query_file = extract_completed_img_vid_queries(result_dir)
 
         if iteration < (n_iter - 1):
             working_dir = os.path.join(result_dir, f'iteration_{iteration + 2}')
@@ -473,7 +558,7 @@ def run_nativqa(engine, search_type, input_file, gl, location, multiple_country,
         for root, dirs, files in os.walk(result_dir):
             for file in files:
                 file_path = os.path.join(root, file)
-                if file_path.endswith("image_results.json"):
+                if file_path.endswith(f"{search_type}_results.json"):
                     data = read_json_data(file_path)
                     for obj in data:
                         if obj['data_id'] not in ids:
@@ -508,7 +593,7 @@ def main():
     parser.add_option('-s', '--engine', action="store", dest="engine", default=None, type="string",
                       help='Search engine (google, yahoo, or bing)')
     parser.add_option('-t', '--search_type', action="store", dest="search_type", default="text", type="string",
-                      help="Type of search API (image or text)")
+                      help="Type of search API (image, text, or video)")
     parser.add_option('-i', '--input_file', action="store", dest="input_file", default=None, type="string",
                       help='input csv/tsv file to scrape')
     parser.add_option('-c', '--country_code', action='store', dest="country_code", default="qa", type="string",
