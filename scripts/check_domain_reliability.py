@@ -1,4 +1,5 @@
 import csv
+import sys
 import optparse
 import logging
 from urllib.parse import urlparse
