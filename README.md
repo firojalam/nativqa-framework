@@ -43,7 +43,7 @@ which uses a sample [seed query file](./data/test_query.csv)
 #### Parameters
 
 - `--engine` Search engine to use for collect QA. Currently supports only Google, Bing, and Yahoo.
-- `--search_type` Type of search either `text` or `image`. [Currently supports only Google for image search.]
+- `--search_type` Type of search either `text`, `image`, or `video`. [Currently supports only Google and Bing for image search and Google for video/audio search.]
 - `--input_file` seed query file should be CSV/TSV
 - `--country_code` Parameter defines the country to use for the Google search. The country code supported by Google.
 - `--location` Parameter defines from where you want the search to originate.

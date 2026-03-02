@@ -235,6 +235,7 @@ def scrape(engine, data, location, gl, summary_writer, failed_writer, mc=None):
             failed_writer.write(f"{json.dumps(entry, ensure_ascii=False)}\n")
 
 
+
 def gen_img_vid_output_files(working_dir, summary, search_type="image"):
     output_data = read_summary_data(summary)
     out_file = os.path.join(working_dir, 'original_response.json')
@@ -244,16 +245,26 @@ def gen_img_vid_output_files(working_dir, summary, search_type="image"):
     sug_search = []
     img_result = []
     for results in output_data:
+        category = results['search_parameters']['category']
+        query = results['search_parameters']['q']
         if 'related_searches' in results:
-            rel_search.extend(results['related_searches'])
+            for entry in results['related_searches']:
+                rel_search.append(entry)
         if 'suggested_searches' in results:
-            sug_search.extend(results['suggested_searches'])
+            for entry in results['suggested_searches']:
+                sug_search.append(entry)
         if search_type == "image":
             if 'images_results' in results:
-                img_result.extend(results['images_results'])
+                for entry in results['images_results']:
+                    entry['category'] = category
+                    entry['input_query'] = query
+                    img_result.append(entry)
         else:
             if "video_results" in results:
-                img_result.extend(results['video_results'])
+                for entry in results['video_results']:
+                    entry['category'] = category
+                    entry['input_query'] = query
+                    img_result.append(entry)
 
     out_file = os.path.join(working_dir, 'related_search.json')
     logger.info(f'writing related questions to: {out_file}...')
