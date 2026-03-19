@@ -1,0 +1,58 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nativqa-framework"
+dynamic = ["version"]
+description = "Framework for collecting multilingual culturally-aligned natural queries."
+readme = { file = "README.md", content-type = "text/markdown" }
+requires-python = ">=3.8"
+license = "CC-BY-NC-SA-4.0"
+license-files = ["licenses_by-nc-sa_4.0_legalcode.txt"]
+authors = [
+  { name = "Firoj Alam" },
+  { name = "Md Arid Hasan" },
+  { name = "Sahinur Rahman Laskar" },
+  { name = "Mucahid Kutlu" },
+  { name = "Shammur Absar Chowdhury" }
+]
+keywords = [
+  "question-answering",
+  "dataset-collection",
+  "search",
+  "multilingual",
+  "evaluation"
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3 :: Only",
+  "Programming Language :: Python :: 3.8",
+  "Programming Language :: Python :: 3.9",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Artificial Intelligence"
+]
+dependencies = [
+  "google-search-results==2.4.2",
+  "python-dotenv==1.0.1",
+  "tqdm==4.66.6"
+]
+
+[project.urls]
+Homepage = "https://gitlab.com/nativqa/nativqa-framework"
+Repository = "https://gitlab.com/nativqa/nativqa-framework.git"
+
+[project.scripts]
+nativqa = "nativqa.nativqa_framework:main"
+
+[tool.setuptools.dynamic]
+version = { attr = "nativqa.__version__" }
+
+[tool.setuptools.packages.find]
+include = ["nativqa"]

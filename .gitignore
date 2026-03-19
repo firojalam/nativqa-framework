@@ -5,3 +5,7 @@ nativqa/__pycache__/
 */__pycache__/
 envs
 *.env
+build/
+dist/
+*.egg-info/
+seed_query_collector/flask_session/
